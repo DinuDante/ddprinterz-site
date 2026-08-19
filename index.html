@@ -1,219 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DDPrinterZ — Custom 3D Printing in Bhubaneswar, Odisha</title>
-<meta name="description" content="Custom 3D printing service in Bhubaneswar by DinuDante. Multicolor prints, personalized gifts, nameplates, lithophanes, prototypes. Order via Instagram DM @ddprinterz or WhatsApp.">
-<meta property="og:title" content="DDPrinterZ — Custom 3D Printing in Bhubaneswar">
-<meta property="og:description" content="Multicolor 3D prints, gifts & prototypes. DM @ddprinterz on Instagram (preferred) or WhatsApp to order.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07100e">
+<title>DDPrinterZ — Custom 3D Printing in Bhubaneswar</title>
+<meta name="description" content="Premium custom 3D printing in Bhubaneswar. Multicolour gifts, nameplates, lithophanes and rapid prototypes.">
+<link rel="canonical" href="https://dinudante.com/"><meta property="og:title" content="DDPrinterZ — Ideas, made real."><meta property="og:description" content="Premium multicolour 3D prints made in Bhubaneswar."><meta property="og:type" content="website">
 <style>
-  :root{
-    --bg:#0d1117; --bg2:#151b24; --card:#1a2230; --text:#e8edf4; --muted:#94a3b8;
-    --accent:#22d3ee; --accent2:#f59e0b; --green:#25D366; --radius:14px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-  /* NAV */
-  nav{position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;z-index:50}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1080px;margin:0 auto}
-  .logo{font-weight:800;font-size:1.25rem;letter-spacing:.5px}
-  .logo span{color:var(--accent)}
-  .nav-links{display:flex;gap:22px}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:.95rem}
-  .nav-links a:hover{color:var(--accent)}
-  /* HERO */
-  header{padding:80px 0 60px;text-align:center;background:
-    radial-gradient(ellipse 60% 50% at 50% 0%,rgba(34,211,238,.12),transparent)}
-  .badge{display:inline-block;background:var(--card);border:1px solid #2a3648;color:var(--accent);
-    padding:6px 16px;border-radius:999px;font-size:.85rem;margin-bottom:22px}
-  h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;font-weight:800}
-  h1 em{font-style:normal;color:var(--accent)}
-  .sub{color:var(--muted);max-width:560px;margin:18px auto 32px;font-size:1.1rem}
-  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;
-    text-decoration:none;font-weight:700;font-size:1rem;transition:transform .15s}
-  .btn:hover{transform:translateY(-2px)}
-  .btn-wa{background:var(--green);color:#fff}
-  .btn-ghost{background:var(--card);color:var(--text);border:1px solid #2a3648}
-  /* SECTIONS */
-  section{padding:64px 0}
-  .sec-title{font-size:1.9rem;font-weight:800;margin-bottom:8px;text-align:center}
-  .sec-sub{color:var(--muted);text-align:center;margin-bottom:40px}
-  /* SERVICES */
-  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-  .card{background:var(--card);border:1px solid #232f42;border-radius:var(--radius);padding:28px}
-  .card .ico{font-size:2rem;margin-bottom:12px}
-  .card h3{margin-bottom:8px;font-size:1.15rem}
-  .card p{color:var(--muted);font-size:.95rem}
-  /* PORTFOLIO */
-  .pf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-  .pf{aspect-ratio:1;border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;
-    justify-content:center;font-size:3rem;border:1px solid #232f42;position:relative;overflow:hidden}
-  .pf small{font-size:.85rem;color:#cbd5e1;margin-top:10px;font-weight:600}
-  .pf:nth-child(1){background:linear-gradient(135deg,#164e63,#0d1117)}
-  .pf:nth-child(2){background:linear-gradient(135deg,#4c1d95,#0d1117)}
-  .pf:nth-child(3){background:linear-gradient(135deg,#7c2d12,#0d1117)}
-  .pf:nth-child(4){background:linear-gradient(135deg,#14532d,#0d1117)}
-  .pf:nth-child(5){background:linear-gradient(135deg,#831843,#0d1117)}
-  .pf:nth-child(6){background:linear-gradient(135deg,#713f12,#0d1117)}
-  .pf-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:18px}
-  /* PRICING */
-  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:var(--radius);overflow:hidden}
-  th,td{padding:16px 20px;text-align:left;border-bottom:1px solid #232f42}
-  th{background:var(--bg2);color:var(--accent);font-size:.9rem;text-transform:uppercase;letter-spacing:.5px}
-  td:last-child,th:last-child{text-align:right}
-  .price{color:var(--accent2);font-weight:700}
-  .pricing-note{color:var(--muted);font-size:.9rem;margin-top:14px;text-align:center}
-  /* STEPS */
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;counter-reset:step}
-  .step{background:var(--card);border:1px solid #232f42;border-radius:var(--radius);padding:24px;position:relative}
-  .step::before{counter-increment:step;content:counter(step);position:absolute;top:-16px;left:20px;
-    background:var(--accent);color:#06222a;width:32px;height:32px;border-radius:50%;display:flex;
-    align-items:center;justify-content:center;font-weight:800}
-  .step h3{margin:10px 0 6px;font-size:1.05rem}
-  .step p{color:var(--muted);font-size:.92rem}
-  /* WHY */
-  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-  .why div{background:var(--bg2);border-radius:10px;padding:18px 20px;border-left:3px solid var(--accent)}
-  .why b{display:block;margin-bottom:4px}
-  .why span{color:var(--muted);font-size:.92rem}
-  /* CONTACT */
-  .contact-box{background:linear-gradient(135deg,#0e2a33,#151b24);border:1px solid #1e4854;
-    border-radius:var(--radius);padding:48px 28px;text-align:center}
-  .contact-links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-  footer{border-top:1px solid #1f2937;padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
-  footer a{color:var(--accent);text-decoration:none}
-  /* floating WA */
-  .wa-float{position:fixed;bottom:22px;right:22px;background:var(--green);width:58px;height:58px;
-    border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;
-    box-shadow:0 6px 20px rgba(0,0,0,.4);text-decoration:none;z-index:60}
-  @media(max-width:640px){.nav-links{display:none}}
+:root{--bg:#07100e;--panel:#101b18;--ink:#f4f2ea;--muted:#a3aaa4;--line:#293630;--lime:#c9ff57;--r:24px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{color:var(--lime);font-size:.74rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.title{margin:0;font-size:clamp(2.4rem,5vw,4.8rem);line-height:.96;letter-spacing:-.055em}.muted{color:var(--muted)}.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:999;background:var(--lime);color:#06100c;padding:10px}
+nav{position:sticky;top:0;z-index:50;background:#07100edb;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff12}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.2rem;font-weight:950;text-decoration:none}.brand i{color:var(--lime);font-style:normal}.links{display:flex;gap:28px}.links a{text-decoration:none;color:#c2c8c2;font-size:.87rem;font-weight:700}.links a:hover{color:var(--lime)}.menu{display:none;background:none;color:var(--ink);border:1px solid var(--line);padding:8px 12px;border-radius:10px}
+header{padding:96px 0 78px;overflow:hidden}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}.display{margin:12px 0 25px;font-size:clamp(3.6rem,8vw,7.2rem);line-height:.83;letter-spacing:-.075em}.display span{color:var(--lime)}.lead{max-width:620px;color:#b5bbb5;font-size:1.12rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;min-height:51px;align-items:center;padding:0 21px;border:1px solid var(--line);border-radius:99px;text-decoration:none;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}.ig{border:0;color:white;background:linear-gradient(110deg,#ff7a28,#ed2878,#6744d5)}.wa{background:#25d366;border:0;color:#05140a}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#9da49e;font-size:.8rem}.trust span:before{content:"✓";color:var(--lime);margin-right:7px}.art{position:relative;aspect-ratio:.9;border:1px solid var(--line);border-radius:36px;background:radial-gradient(circle at 75% 15%,#c9ff5735,transparent 28%),linear-gradient(145deg,#15241f,#09120f);box-shadow:0 40px 100px #0006}.printer{position:absolute;inset:14%;border:1px solid #41514a;border-radius:22px;background:#ffffff09}.printer:before{content:"";position:absolute;left:10%;right:10%;top:14%;height:9px;border-radius:8px;background:#3b4943;box-shadow:0 58px 0 #27352f}.printer:after{content:"DD";position:absolute;left:18%;right:18%;bottom:12%;height:43%;display:grid;place-items:center;background:linear-gradient(135deg,var(--lime),#51dbb0);color:#07120e;font-size:clamp(3rem,7vw,6rem);font-weight:950;letter-spacing:-.1em;clip-path:polygon(8% 15%,85% 0,100% 78%,18% 100%,0 42%)}
+section{padding:92px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.head>p{max-width:430px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{min-height:300px;padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);display:flex;flex-direction:column;justify-content:space-between}.card small{color:var(--lime);font-weight:900}.card h3{font-size:1.5rem;margin:30px 0 8px}.card p{margin:0;color:var(--muted)}
+.work{background:#eeeae0;color:#111612}.work .eyebrow{color:#527800}.work .muted{color:#5f665f}.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:270px 270px;gap:14px}.tile{position:relative;overflow:hidden;border-radius:22px;text-decoration:none;background:#19231f}.tile:first-child{grid-row:span 2}.visual{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(5rem,11vw,10rem);background:radial-gradient(circle at 35% 20%,#55746c,#14201c 65%);transition:.35s}.tile:nth-child(2) .visual{background:radial-gradient(circle at 70% 20%,#8b4f94,#28182d 65%)}.tile:nth-child(3) .visual{background:radial-gradient(circle at 70% 20%,#af663d,#2d1c16 65%)}.tile:nth-child(4) .visual{background:radial-gradient(circle at 30% 20%,#4d814b,#162719 65%)}.tile:nth-child(5) .visual{background:radial-gradient(circle at 70% 20%,#4567a2,#161f30 65%)}.tile:hover .visual{transform:scale(1.05)}.label{position:absolute;inset:auto 0 0;padding:65px 22px 20px;background:linear-gradient(transparent,#000c);color:white}.label b{display:block}.label span{font-size:.76rem;color:#d5d8d5}.gallery-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:22px}.gallery-foot p{margin:0;max-width:700px;color:#626862;font-size:.87rem}.work .btn{border-color:#aab0a9}
+.prices{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px}.price-list{border-top:1px solid var(--line)}.price{display:grid;grid-template-columns:1fr 1.2fr auto;gap:24px;padding:23px 0;border-bottom:1px solid var(--line);align-items:center}.price span{color:var(--muted);font-size:.9rem}.price b:last-child{color:var(--lime)}.note{font-size:.83rem;color:var(--muted)}
+.order{background:var(--lime);color:#09130e}.order .eyebrow{color:#456000}.order .head>p{color:#3e4b43}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border:1px solid #0a160e33;border-radius:24px;overflow:hidden;background:#0a160e33}.step{padding:32px;background:var(--lime);min-height:250px}.number{display:grid;place-items:center;width:38px;height:38px;border:1px solid;border-radius:50%;font-weight:900}.step h3{margin:48px 0 8px;font-size:1.3rem}.step p{margin:0;color:#3c493f}.why{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.why div{border:1px solid var(--line);border-radius:20px;padding:24px}.why b{display:block;margin-bottom:8px}.why span{color:var(--muted);font-size:.88rem}.contact{padding:65px;border:1px solid #384740;border-radius:34px;background:radial-gradient(circle at 90% 10%,#ff6b3538,transparent 36%),#101b18}.contact>p{max-width:570px;color:var(--muted)}footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.social{display:flex;gap:18px}.social a{text-decoration:none;color:var(--ink)}.float{position:fixed;right:20px;bottom:20px;z-index:40;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#05140a;text-decoration:none;font-size:1.4rem;box-shadow:0 10px 30px #0008}
+@media(max-width:900px){.hero,.prices{grid-template-columns:1fr}.art{max-width:600px;aspect-ratio:1.15}.cards{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:370px 240px 240px}.tile:first-child{grid-column:span 2;grid-row:auto}.steps{grid-template-columns:1fr}.step{min-height:auto}.why{grid-template-columns:1fr 1fr}}
+@media(max-width:670px){.wrap{width:calc(100% - 28px)}.links{display:none;position:absolute;top:74px;left:0;right:0;padding:22px;background:#0b1512;flex-direction:column}.links.open{display:flex}.menu{display:block}.display{font-size:clamp(3.5rem,18vw,6rem)}.cards,.why{grid-template-columns:1fr}.head{align-items:start;flex-direction:column}.gallery{display:flex;overflow:auto;scroll-snap-type:x mandatory}.tile,.tile:first-child{min-width:86%;height:380px;scroll-snap-align:start}.gallery-foot{align-items:start;flex-direction:column}.price{grid-template-columns:1fr auto}.price span{grid-column:1/-1;grid-row:2}.contact{padding:40px 23px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"DDPrinterZ","description":"Custom 3D printing in Bhubaneswar","areaServed":"Bhubaneswar, Odisha, India","email":"dineshdante.ds@gmail.com","sameAs":["https://www.instagram.com/ddprinterz/","https://www.youtube.com/@DDPrinterZ"]}</script>
 </head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <div class="logo">DD<span>PrinterZ</span></div>
-    <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#order">How to Order</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header>
-  <div class="wrap">
-    <div class="badge">📍 Bhubaneswar, Odisha · Same-week delivery</div>
-    <h1>Custom <em>3D Printing</em><br>Made in Bhubaneswar</h1>
-    <p class="sub">Multicolor prints, personalized gifts, nameplates, lithophanes and rapid prototypes — printed on Bambu Lab machines and delivered across BBS & India.</p>
-    <div class="cta-row">
-      <a class="btn" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff" href="https://ig.me/m/ddprinterz" target="_blank">📸 Order on Instagram — Preferred</a>
-      <a class="btn btn-wa" href="https://wa.me/919556703560?text=Hi%20DDPrinterZ!%20I%20want%20a%20custom%203D%20print." target="_blank">💬 WhatsApp</a>
-      <a class="btn btn-ghost" href="#pricing">See Pricing</a>
-    </div>
-  </div>
-</header>
-
-<section id="services">
-  <div class="wrap">
-    <h2 class="sec-title">What We Print</h2>
-    <p class="sec-sub">If you can imagine it, we can print it — in full color.</p>
-    <div class="grid3">
-      <div class="card"><div class="ico">🎁</div><h3>Personalized Gifts</h3><p>Multicolor nameplates, couple gifts, keychains, lithophane photo lamps, festival & wedding gifts that no shop sells.</p></div>
-      <div class="card"><div class="ico">⚙️</div><h3>Prototypes & Projects</h3><p>Functional prototypes for startups and final-year engineering projects — fast turnaround, quality PLA/PETG, student-friendly rates.</p></div>
-      <div class="card"><div class="ico">🏛️</div><h3>Models & Decor</h3><p>Architectural scale models, desk organizers, planters, figurines and custom decor for home or office.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio" style="background:var(--bg2)">
-  <div class="wrap">
-    <h2 class="sec-title">Recent Prints</h2>
-    <p class="sec-sub">A few things that came off our printers recently.</p>
-    <div class="pf-grid">
-      <div class="pf">🏷️<small>Multicolor Nameplates</small></div>
-      <div class="pf">🖼️<small>Lithophane Lamps</small></div>
-      <div class="pf">🔑<small>Custom Keychains</small></div>
-      <div class="pf">🛕<small>Jagannath & Odia Culture</small></div>
-      <div class="pf">🤖<small>Engineering Prototypes</small></div>
-      <div class="pf">🌱<small>Planters & Decor</small></div>
-    </div>
-    <p class="pf-note">👉 See daily prints on <a href="https://www.instagram.com/ddprinterz/" style="color:var(--accent)">Instagram @ddprinterz</a></p>
-  </div>
-</section>
-
-<section id="pricing">
-  <div class="wrap">
-    <h2 class="sec-title">Transparent Pricing</h2>
-    <p class="sec-sub">No guessing games — here's what things cost.</p>
-    <table>
-      <tr><th>Item</th><th>Details</th><th>Price</th></tr>
-      <tr><td>Custom Keychain</td><td>Multicolor, your name/logo</td><td class="price">₹149+</td></tr>
-      <tr><td>Nameplate</td><td>Desk or door, multicolor</td><td class="price">₹399+</td></tr>
-      <tr><td>Lithophane Photo Lamp</td><td>Your photo in 3D light</td><td class="price">₹599+</td></tr>
-      <tr><td>Custom Prints (PLA)</td><td>Your design / STL file</td><td class="price">₹4/gram</td></tr>
-      <tr><td>Custom Prints (PETG)</td><td>Stronger, functional parts</td><td class="price">₹5/gram</td></tr>
-      <tr><td>Prototyping (B2B / students)</td><td>Design help available</td><td class="price">Get a quote</td></tr>
-    </table>
-    <p class="pricing-note">Minimum order ₹400 · Delivery in Bhubaneswar or shipping across India at cost</p>
-  </div>
-</section>
-
-<section id="order" style="background:var(--bg2)">
-  <div class="wrap">
-    <h2 class="sec-title">How to Order</h2>
-    <p class="sec-sub">From idea to your hands in 3 steps.</p>
-    <div class="steps">
-      <div class="step"><h3>Tell us your idea</h3><p>DM us on <a href="https://ig.me/m/ddprinterz" style="color:var(--accent)">Instagram @ddprinterz</a> (preferred) or WhatsApp — a photo, rough sketch, or STL file, anything works.</p></div>
-      <div class="step"><h3>Get a quote</h3><p>We confirm price and timeline within a few hours. Pay a small advance to start.</p></div>
-      <div class="step"><h3>Receive your print</h3><p>Pickup in Bhubaneswar or doorstep delivery. Most orders ready within 2–5 days.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2 class="sec-title">Why DDPrinterZ?</h2>
-    <p class="sec-sub"></p>
-    <div class="why">
-      <div><b>🎨 True multicolor</b><span>Bambu Lab AMS system — vivid multicolor prints most local services can't offer.</span></div>
-      <div><b>📍 Local & fast</b><span>Based in Bhubaneswar. No courier wait from other cities.</span></div>
-      <div><b>💬 Direct communication</b><span>You talk to the maker, not a call center. Revisions are easy.</span></div>
-      <div><b>✅ Quality checked</b><span>Every print inspected and finished by hand before delivery.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <div class="contact-box">
-      <h2 class="sec-title">Ready to print something?</h2>
-      <p class="sec-sub" style="margin-bottom:0">Message us — we reply fast.</p>
-      <div class="contact-links">
-        <a class="btn" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff" href="https://ig.me/m/ddprinterz" target="_blank">📸 DM on Instagram — Preferred</a>
-        <a class="btn btn-wa" href="https://wa.me/919556703560?text=Hi%20DDPrinterZ!%20I%20want%20a%20custom%203D%20print." target="_blank">💬 WhatsApp</a>
-        <a class="btn btn-ghost" href="https://www.youtube.com/@DDPrinterZ" target="_blank">▶️ YouTube</a>
-        <a class="btn btn-ghost" href="mailto:dineshdante.ds@gmail.com">✉️ Email</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    DDPrinterZ · Custom 3D Printing · Bhubaneswar, Odisha<br>
-    A brand by <a href="https://dinudante.in">DinuDante</a> (Dinesh Behera) · © 2026
-  </div>
-</footer>
-
-<a class="wa-float" href="https://wa.me/919556703560?text=Hi%20DDPrinterZ!" target="_blank" aria-label="WhatsApp">💬</a>
-
-</body>
-</html>
+<body><a class="skip" href="#main">Skip to content</a>
+<nav><div class="wrap nav"><a class="brand" href="#top">DD<i>PrinterZ</i></a><div class="links" id="links"><a href="#services">Services</a><a href="#work">Our work</a><a href="#pricing">Pricing</a><a href="#order">How to order</a><a href="#contact">Contact</a></div><button class="menu" aria-expanded="false" aria-controls="links">Menu</button></div></nav>
+<main id="main"><header id="top"><div class="wrap hero"><div><p class="eyebrow">Bhubaneswar · Odisha · India</p><h1 class="display">Ideas,<br><span>made real.</span></h1><p class="lead">Premium multicolour 3D prints, personalised gifts and rapid prototypes—made locally on Bambu Lab machines and shipped across India.</p><div class="actions"><a class="btn ig" href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer">Order on Instagram ↗</a><a class="btn" href="#work">Explore our work</a></div><div class="trust"><span>Same-week delivery</span><span>True multicolour</span><span>Made locally</span></div></div><div class="art" aria-label="DDPrinterZ 3D-print illustration"><div class="printer"></div></div></div></header>
+<section id="services"><div class="wrap"><div class="head"><div><p class="eyebrow">What we make</p><h2 class="title">From thoughtful gifts<br>to working prototypes.</h2></div><p class="muted">Bring a photo, sketch or STL. We’ll turn it into a polished physical object.</p></div><div class="cards"><article class="card"><small>01 / PERSONAL</small><div><h3>Personalised gifts</h3><p>Nameplates, keychains, lithophane lamps and one-of-one gifts for weddings and festivals.</p></div></article><article class="card"><small>02 / FUNCTIONAL</small><div><h3>Prototypes & projects</h3><p>Dependable PLA and PETG parts for startups, makers and engineering students.</p></div></article><article class="card"><small>03 / EXPRESSIVE</small><div><h3>Models & décor</h3><p>Architectural models, planters, figurines, organisers and Odia-inspired pieces.</p></div></article></div></div></section>
+<section class="work" id="work"><div class="wrap"><div class="head"><div><p class="eyebrow">Fresh off the print bed</p><h2 class="title">Made by DDPrinterZ.</h2></div><p class="muted">A growing collection of custom work. Visit Instagram for the latest prints and reels.</p></div><div class="gallery"><a class="tile" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><div class="visual">🏷️</div><div class="label"><b>Custom nameplates</b><span>Multicolour · Personalised</span></div></a><a class="tile" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><div class="visual">💡</div><div class="label"><b>Lithophane lamps</b><span>Your photo, illuminated</span></div></a><a class="tile" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><div class="visual">🛕</div><div class="label"><b>Odia culture</b><span>Locally inspired</span></div></a><a class="tile" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><div class="visual">🌱</div><div class="label"><b>Home & desk</b><span>Useful, playful objects</span></div></a><a class="tile" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><div class="visual">⚙️</div><div class="label"><b>Prototypes</b><span>Built to test ideas</span></div></a></div><div class="gallery-foot"><p>New pieces, close-up details and behind-the-scenes print videos are shared regularly.</p><a class="btn" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer">Follow @ddprinterz ↗</a></div></div></section>
+<section id="pricing"><div class="wrap prices"><div><p class="eyebrow">Simple pricing</p><h2 class="title">Clear from<br>the start.</h2><p class="muted">Starting prices help you plan before we confirm your custom quote.</p></div><div><div class="price-list"><div class="price"><b>Custom keychain</b><span>Your name or logo, multicolour</span><b>₹149+</b></div><div class="price"><b>Nameplate</b><span>Desk or door, multicolour</span><b>₹399+</b></div><div class="price"><b>Lithophane lamp</b><span>Your photograph transformed into light</span><b>₹599+</b></div><div class="price"><b>Custom PLA print</b><span>Your design or STL file</span><b>₹4/g</b></div><div class="price"><b>Custom PETG print</b><span>Stronger, functional parts</span><b>₹5/g</b></div><div class="price"><b>Prototyping</b><span>Design help for students and businesses</span><b>Quote</b></div></div><p class="note">Minimum order ₹400 · Delivery in Bhubaneswar · India-wide shipping at cost</p></div></div></section>
+<section class="order" id="order"><div class="wrap"><div class="head"><div><p class="eyebrow">How to order</p><h2 class="title">From your idea<br>to your hands.</h2></div><p>Most orders are ready in 2–5 days. Timing is confirmed before printing begins.</p></div><div class="steps"><article class="step"><span class="number">1</span><h3>Share your idea</h3><p>Send a photo, sketch or STL on <a href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer">Instagram</a> (preferred) or WhatsApp.</p></article><article class="step"><span class="number">2</span><h3>Approve the quote</h3><p>We confirm material, colour, price and timeline. A small advance starts the print.</p></article><article class="step"><span class="number">3</span><h3>Receive your print</h3><p>Pick up in Bhubaneswar or choose delivery. Every piece is checked and hand-finished.</p></article></div></div></section>
+<section><div class="wrap"><div class="head"><div><p class="eyebrow">Why DDPrinterZ</p><h2 class="title">Local care.<br>Professional output.</h2></div></div><div class="why"><div><b>True multicolour</b><span>Bambu Lab AMS for vivid, integrated colour.</span></div><div><b>Fast & local</b><span>Made in Bhubaneswar without the intercity wait.</span></div><div><b>Maker-direct</b><span>Speak with the person making your print.</span></div><div><b>Quality checked</b><span>Inspected and finished before delivery.</span></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><p class="eyebrow">Start a print</p><h2 class="title">What would you like<br>to bring to life?</h2><p>Send the idea—even if it’s rough. We’ll help with the next step and reply with a clear quote.</p><div class="actions"><a class="btn ig" href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer">DM on Instagram ↗</a><a class="btn wa" href="https://wa.me/919556703560?text=Hi%20DDPrinterZ!%20I%20want%20a%20custom%203D%20print." target="_blank" rel="noopener noreferrer">WhatsApp us</a><a class="btn" href="mailto:dineshdante.ds@gmail.com">Email</a></div></div></div></section></main>
+<footer><div class="wrap footer"><span>© 2026 DDPrinterZ · Custom 3D Printing · Bhubaneswar, Odisha</span><div class="social"><a href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@DDPrinterZ" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://dinudante.in" target="_blank" rel="noopener noreferrer">DinuDante</a></div></div></footer><a class="float" href="https://wa.me/919556703560?text=Hi%20DDPrinterZ!" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp DDPrinterZ">●</a>
+<script>const b=document.querySelector('.menu'),l=document.querySelector('.links');b.onclick=()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)};l.onclick=()=>{l.classList.remove('open');b.setAttribute('aria-expanded','false')}</script></body></html>
