@@ -11,7 +11,7 @@ This file is the durable handoff for continuing work after a fresh clone or pull
 - Deployment: GitHub Pages from `main`
 - Custom domain: `dinudante.com` via `CNAME`
 - Application: dependency-free static site in `index.html`
-- Current visual direction: peaceful Japanese anime-inspired design using deep purple, muted violet, and acid green
+- Current visual direction: peaceful Japanese-inspired design using dominant forest green and aubergine purple, with warm ivory and restrained vermilion accents
 - Public maker name: **DinuDante**. Do not replace it with the legal/personal name in visible website copy.
 
 ## Product and content requirements
@@ -32,9 +32,10 @@ The site currently positions DDPrinterZ as a maker-direct custom 3D-printing stu
 
 The current design should feel stylish, simple, cinematic, and peaceful rather than loud cyberpunk.
 
-- Background: ink-black purple
-- Primary accent: restrained acid green
-- Supporting accent: muted wisteria/violet
+- Background: near-black forest green flowing into ink-purple
+- Primary structural colors: deep forest green and aubergine purple
+- Supporting colors: warm ivory, muted wisteria, and restrained vermilion red
+- Typography: Mincho-style serif stacks for display headings and a clean humanist sans-serif stack for body copy
 - Visual references: contemporary anime-film lighting, shoji-inspired geometry, subtle seigaiha texture, and sparse sakura details
 - Avoid visible character faces, franchise imitation, stereotypical costumes, excessive neon, fake Japanese writing, and visual clutter
 - Preserve generous spacing, rounded cards, subtle borders, and accessible contrast
@@ -44,6 +45,8 @@ The active hero image is:
 - `assets/hero/anime-zen-maker-v2.jpg`
 
 It depicts an anonymous maker seen from behind in a moonlit Japanese-inspired workshop beside a modern 3D printer. The visible face was intentionally removed. The older `anime-maker-v1.jpg` is historical and is not referenced by the live page.
+
+The navigation logo is a code-native circular maker mon with interlocking green and purple `D` forms and a small vermilion accent. It deliberately avoids fake Japanese lettering. The floating WhatsApp control uses the supplied WhatsApp artwork at `assets/brand/whatsapp.webp` and retains an accessible label.
 
 ## Authentic project media
 
@@ -73,6 +76,25 @@ Each photograph has:
 - Responsive `srcset`/`sizes` markup
 
 All gallery photographs except the first are lazy-loaded. Preserve this strategy so the homepage does not download the full gallery during initial rendering.
+
+The service cards use theme-treated versions of authentic DDPrinterZ photographs rather than synthetic product concepts:
+
+- `assets/services/personalised-real.webp` — real red/black/white Japanese-inspired wall pieces
+- `assets/services/functional-real.webp` — real orange/white honeycomb phone stand
+- `assets/services/expressive-real.webp` — real classical dance figurine
+
+These images preserve the supplied printed objects while replacing distracting workshop backgrounds and adjusting presentation lighting. Do not describe them as new or different physical products.
+
+The contact panel uses `assets/projects/contact-blossom-real.webp`, a theme-treated version of the authentic green blossom jewellery box. Its composition leaves dark negative space for the contact copy and buttons.
+
+## Infographics
+
+Two generated, text-free visual explainers are integrated into the page, with accessible and editable labels provided in HTML:
+
+- `assets/infographics/making-process.webp` — idea, modelling, printing, and hand-finishing journey
+- `assets/infographics/material-guide.webp` — PLA gift/decor use versus PETG functional-part use
+
+The services section also has a code-native four-stage information rail: source reference, design/material check, colour/print setup, and finishing/delivery.
 
 ## Video media
 
@@ -121,7 +143,10 @@ DDPrinterZ/
 └── assets/
     ├── gallery/   # Responsive authentic project photography
     ├── hero/      # Anime hero artwork
-    └── projects/  # Earlier YouTube-derived project frames
+    ├── infographics/ # Optimized process and material explainers
+    ├── projects/  # Earlier project frames and contact-panel image
+    ├── services/  # Theme-treated authentic service-card photography
+    └── brand/     # Supplied WhatsApp artwork
 ```
 
 ## Resume checklist
@@ -134,4 +159,3 @@ After cloning or pulling:
 4. Preserve all contact links and conversion paths.
 5. Test desktop and mobile behavior after visual changes.
 6. Commit scoped changes with a descriptive message and push to `main` only when verified.
-
