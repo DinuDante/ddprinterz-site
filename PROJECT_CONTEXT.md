@@ -34,6 +34,8 @@ The current design should feel stylish, simple, cinematic, and peaceful rather t
 
 - The navigation includes a day/night theme switch. It follows the visitor's system preference on first visit, remembers later choices in `localStorage`, updates its accessible state, and changes the browser theme colour.
 - Both palettes mirror the understated `dinudante.in` visual language: monospace body copy, Georgia-style editorial display type, fine borders, compact radii, low-contrast surfaces, and sparse multicolour accent rules.
+- Theme colors are semantic tokens rather than simple inversions. Keep light-mode text and outlined actions at WCAG AA contrast or better, particularly in the gallery footer and image-backed contact panel.
+- Action buttons and footer links use the inline SVG symbol set in `index.html` for Instagram, WhatsApp, YouTube, email, project, and external-link icons. Icons are decorative (`aria-hidden`) so accessible names remain concise.
 
 - Background: near-black forest green flowing into ink-purple
 - Primary structural colors: deep forest green and aubergine purple
