@@ -1,6 +1,6 @@
 # DDPrinterZ Website — Project Context
 
-Last updated: 19 August 2026
+Last updated: 20 August 2026
 
 This file is the durable handoff for continuing work after a fresh clone or pull.
 
@@ -11,7 +11,7 @@ This file is the durable handoff for continuing work after a fresh clone or pull
 - Deployment: GitHub Pages from `main`
 - Custom domain: `dinudante.com` via `CNAME`
 - Application: dependency-free static site in `index.html`
-- Current visual direction: peaceful Japanese-inspired design using dominant forest green and aubergine purple, with warm ivory and restrained vermilion accents
+- Current visual direction: a calm editorial system shared with `dinudante.in`, using moss green, warm ivory, muted purple and restrained red accents
 - Public maker name: **DinuDante**. Do not replace it with the legal/personal name in visible website copy.
 
 ## Product and content requirements
@@ -31,6 +31,9 @@ The site currently positions DDPrinterZ as a maker-direct custom 3D-printing stu
 ## Design system
 
 The current design should feel stylish, simple, cinematic, and peaceful rather than loud cyberpunk.
+
+- The navigation includes a day/night theme switch. It follows the visitor's system preference on first visit, remembers later choices in `localStorage`, updates its accessible state, and changes the browser theme colour.
+- Both palettes mirror the understated `dinudante.in` visual language: monospace body copy, Georgia-style editorial display type, fine borders, compact radii, low-contrast surfaces, and sparse multicolour accent rules.
 
 - Background: near-black forest green flowing into ink-purple
 - Primary structural colors: deep forest green and aubergine purple
