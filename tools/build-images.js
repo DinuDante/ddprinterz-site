@@ -251,9 +251,8 @@ async function run() {
         .png({ compressionLevel: 9, palette: true, quality: 90 })
         .toFile(path.join(OUT_BRAND, `logo-${size}.png`));
     }
-    const faviconSrc = fs.existsSync(path.join(SRC, 'favicon-base.png')) ? path.join(SRC, 'favicon-base.png') : logo;
     for (const size of [16, 32, 48, 180]) {
-      await sharp(faviconSrc)
+      await sharp(logo)
         .resize(size, size, { kernel: 'lanczos3' })
         .png({ compressionLevel: 9, palette: true, quality: 92 })
         .toFile(path.join(OUT_BRAND, `favicon-${size}.png`));
