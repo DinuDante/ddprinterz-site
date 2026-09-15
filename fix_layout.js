@@ -1,22 +1,24 @@
-<!doctype html>
+const fs = require('fs');
+
+const layout = `<!doctype html>
 <html lang="en" data-theme="night">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d1512">
-<title>Custom Gifts, Prototypes & 3D Printing Services | DDPrinterZ</title>
-<meta name="description" content="DDPrinterZ offers custom 3D printing services in Bhubaneswar including personalised gifts, functional prototypes, and models using PLA and PETG.">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
 <script>(()=>{const saved=localStorage.getItem('ddprinterz-theme');document.documentElement.dataset.theme=saved||(matchMedia('(prefers-color-scheme:light)').matches?'day':'night')})()</script>
-<link rel="canonical" href="https://dinudante.com/services.html">
-<meta property="og:title" content="Custom Gifts, Prototypes & 3D Printing Services | DDPrinterZ">
-<meta property="og:description" content="DDPrinterZ offers custom 3D printing services in Bhubaneswar including personalised gifts, functional prototypes, and models using PLA and PETG.">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{description}}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://dinudante.com/services.html">
-<meta property="og:image" content="https://dinudante.com/assets/hero/anime-zen-maker-v2.jpg">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{og_image}}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="stylesheet" href="style.css">
-
+{{schema}}
 </head>
 <body>
 <svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
@@ -54,55 +56,7 @@
 </nav>
 
 <main id="main">
-
-<section id="services" style="padding-top: 140px;">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <p class="eyebrow">What we make</p>
-        <h2 class="title">From thoughtful gifts<br>to working prototypes.</h2>
-      </div>
-      <p class="muted">Bring a photo, sketch or STL. We’ll turn it into a polished physical object.</p>
-    </div>
-    <div class="cards">
-      <article class="card real-card">
-        <small>01 / PERSONAL</small>
-        <img class="service-photo" src="assets/services/personalised-real.webp" alt="Real red, black and white Japanese-inspired wall pieces printed by DDPrinterZ" width="900" height="900" decoding="async">
-        <div>
-          <h3>Personalised gifts</h3>
-          <p>Nameplates, keychains, lithophane lamps and one-of-one gifts for weddings and festivals.</p>
-        </div>
-      </article>
-      <article class="card real-card">
-        <small>02 / FUNCTIONAL</small>
-        <img class="service-photo" src="assets/services/functional-real.webp" alt="Real orange and white honeycomb phone stand printed by DDPrinterZ" width="900" height="900" decoding="async">
-        <div>
-          <h3>Prototypes & projects</h3>
-          <p>Dependable PLA and PETG parts for startups, makers and engineering students.</p>
-        </div>
-      </article>
-      <article class="card real-card">
-        <small>03 / EXPRESSIVE</small>
-        <img class="service-photo" src="assets/services/expressive-real.webp" alt="Real classical dance figurine printed by DDPrinterZ" width="900" height="900" decoding="async">
-        <div>
-          <h3>Models & décor</h3>
-          <p>Architectural models, planters, figurines, organisers and Odia-inspired pieces.</p>
-        </div>
-      </article>
-    </div>
-    
-    <div class="process-panel" style="margin-top: 80px;">
-      <img src="assets/infographics/making-process.webp" alt="Illustrated journey from an idea sketch through 3D modelling and printing to a finished object" width="1440" height="540" loading="lazy" decoding="async">
-      <div class="process-legend">
-        <div><small>01</small><b>Share the idea</b></div>
-        <div><small>02</small><b>Shape the model</b></div>
-        <div><small>03</small><b>Print in colour</b></div>
-        <div><small>04</small><b>Finish by hand</b></div>
-      </div>
-    </div>
-  </div>
-</section>
-
+{{content}}
 </main>
 
 <footer>
@@ -136,4 +90,6 @@ if(toggle) {
 syncTheme();
 </script>
 </body>
-</html>
+</html>`;
+fs.writeFileSync('src/templates/_layout.html', layout, 'utf8');
+console.log('Fixed _layout.html encoding!');

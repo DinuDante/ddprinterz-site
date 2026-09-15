@@ -33,9 +33,6 @@ const indexContent = `
         <span>Maker-direct support</span>
       </div>
     </div>
-    <div class="art" aria-label="DDPrinterZ 3D-print illustration">
-      <div class="printer"></div>
-    </div>
   </div>
 </header>
 
