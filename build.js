@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 const data = JSON.parse(fs.readFileSync('src/data.json', 'utf8'));
 const layout = fs.readFileSync('src/templates/_layout.html', 'utf8');
@@ -23,13 +22,13 @@ const indexContent = `
     <div>
       <p class="eyebrow">Made by DinuDante in Bhubaneswar</p>
       <h1 class="display">Ideas,<br><span>made real.</span></h1>
-      <p class="lead">Custom 3D printing for gifts, prototypes and practical ideas made locally in Bhubaneswar.</p>
+      <p class="lead">I turn your ideas into colourful, useful objects—from a one-of-one gift to a working prototype—on my Bambu Lab printers here in Odisha.</p>
       <div class="actions">
-        <a class="btn ig" href="${data.site.instagram}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Start a print</a>
-        <a class="btn" href="work.html"><svg class="icon" aria-hidden="true"><use href="#icon-cube"/></svg>See real work</a>
+        <a class="btn ig" href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Tell me your idea</a>
+        <a class="btn" href="work.html"><svg class="icon" aria-hidden="true"><use href="#icon-cube"/></svg>See real prints</a>
       </div>
       <div class="trust">
-        <span>Typical turnaround 2–5 days</span>
+        <span>Same-week delivery</span>
         <span>True multicolour</span>
         <span>Maker-direct support</span>
       </div>
@@ -73,10 +72,9 @@ const indexContent = `
       <p>Most orders are ready in 2–5 days. Timing is confirmed before printing begins.</p>
     </div>
     <div class="steps">
-      <article class="step"><span class="number">1</span><h3>Send the idea</h3><p>Send a photo, sketch or STL on <a href="${data.site.instagram}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Instagram</a> or <a href="${data.site.whatsapp_url}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>.</p></article>
-      <article class="step"><span class="number">2</span><h3>Design & Print Check</h3><p>Confirm dimensions, material, colours and whether design help is needed.</p></article>
-      <article class="step"><span class="number">3</span><h3>Quote & Approval</h3><p>Price, expected timeline, and advance. A small advance starts the print.</p></article>
-      <article class="step"><span class="number">4</span><h3>Print & Quality Check</h3><p>Slice, print, inspect and finish.</p></article>
+      <article class="step"><span class="number">1</span><h3>Share your idea</h3><p>Send a photo, sketch or STL on <a href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Instagram</a> (preferred) or <a href="https://wa.me/919556703560?text=Hi%20DinuDante%21%20I%20want%20a%20custom%203D%20print." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>.</p></article>
+      <article class="step"><span class="number">2</span><h3>Approve the quote</h3><p>We confirm material, colour, price and timeline. A small advance starts the print.</p></article>
+      <article class="step"><span class="number">3</span><h3>Receive your print</h3><p>Pick up in Bhubaneswar or choose delivery. Every piece is checked and hand-finished.</p></article>
     </div>
   </div>
 </section>
@@ -118,7 +116,7 @@ const indexContent = `
     <div class="maker-copy">
       <p class="eyebrow">Meet your maker</p>
       <blockquote>“I started DDPrinterZ to make custom 3D printing personal, approachable and local to Bhubaneswar.”</blockquote>
-      <p>I’m DinuDante—an engineering maker printing your objects locally in Bhubaneswar. You work directly with me from the first reference image to the final quality check.</p>
+      <p>I’m DinuDante—the designer, printer operator and person replying to your messages. You work directly with me from the first reference image to the final quality check.</p>
       <p><strong>DinuDante · Founder, DDPrinterZ</strong></p>
     </div>
   </div>
@@ -131,22 +129,22 @@ const indexContent = `
       <h2 class="title">What should we<br>make together?</h2>
       <p>Send me your idea—even if it’s rough. I’ll help with the next step and reply with a clear quote.</p>
       <div class="actions">
-        <a class="btn ig" href="${data.site.instagram}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>DM on Instagram</a>
-        <a class="btn wa" href="${data.site.whatsapp_url}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>
-        <a class="btn" href="mailto:${data.site.email}"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>Email me</a>
+        <a class="btn ig" href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>DM me on Instagram</a>
+        <a class="btn wa" href="https://wa.me/919556703560?text=Hi%20DinuDante!%20I%20want%20a%20custom%203D%20print." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp DinuDante</a>
+        <a class="btn" href="mailto:dineshdante.ds@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>Email me</a>
       </div>
     </div>
   </div>
 </section>
 `;
 
-const schema = `<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"DDPrinterZ","description":"Custom 3D printing in Bhubaneswar","areaServed":"Bhubaneswar, Odisha, India","email":"dineshdante.ds@gmail.com","sameAs":["https://www.instagram.com/ddprinterz/","https://www.youtube.com/@DDPrinterZ"]}</script>`;
+const schema = `<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"DDPrinterZ","description":"Premium multicolour 3D prints made in Bhubaneswar.","areaServed":"Bhubaneswar, Odisha, India","email":"dineshdante.ds@gmail.com","sameAs":["https://www.instagram.com/ddprinterz/","https://www.youtube.com/@DDPrinterZ"]}</script>`;
 
 renderPage({
   filename: 'index.html',
   path: '',
-  title: 'DDPrinterZ | Custom 3D Printing in Bhubaneswar, Odisha',
-  description: 'Custom 3D printing in Bhubaneswar for personalised gifts, prototypes, functional parts and multicolour models. Work directly with DinuDante.',
+  title: 'DDPrinterZ — Ideas, made real.',
+  description: 'Premium multicolour 3D prints made in Bhubaneswar.',
   content: indexContent,
   schema: schema
 });
@@ -171,11 +169,17 @@ const workContent = `
       </a>`).join('')}
     </div>
     
+    <div class="gallery-foot" style="margin-top: 40px; text-align: center;">
+      <p style="margin-bottom: 20px;">Want one with your colours, name or idea? Send me a reference and I’ll help shape it.</p>
+      <a class="btn" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>More on Instagram</a>
+    </div>
+    
     <div class="head" style="margin-top: 100px;">
       <div>
         <p class="eyebrow">Watch the process</p>
-        <h2 class="title">Featured DDPrinterZ Shorts</h2>
+        <h2 class="title">Printing, finishing<br>and the final reveal.</h2>
       </div>
+      <p class="muted">Play the latest DDPrinterZ Shorts right here. Each one is filmed from an actual project.</p>
     </div>
     <div class="video-grid">
       ${data.videos.map(v => `
@@ -185,6 +189,9 @@ const workContent = `
         </div>
         <div class="video-copy"><small>${v.tag}</small><h3>${v.title}</h3></div>
       </article>`).join('')}
+    </div>
+    <div class="actions" style="margin-top: 40px; justify-content: center;">
+      <a class="btn" href="https://www.youtube.com/@DDPrinterZ" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-youtube"/></svg>Watch all on YouTube</a>
     </div>
   </div>
 </section>
@@ -331,20 +338,20 @@ renderPage({
   content: notFoundContent
 });
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = \`<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${data.site.url}</loc></url>
-  <url><loc>${data.site.url}work.html</loc></url>
-  <url><loc>${data.site.url}services.html</loc></url>
-  <url><loc>${data.site.url}privacy.html</loc></url>
-  <url><loc>${data.site.url}order-policy.html</loc></url>
-</urlset>`;
+  <url><loc>\${data.site.url}</loc></url>
+  <url><loc>\${data.site.url}work.html</loc></url>
+  <url><loc>\${data.site.url}services.html</loc></url>
+  <url><loc>\${data.site.url}privacy.html</loc></url>
+  <url><loc>\${data.site.url}order-policy.html</loc></url>
+</urlset>\`;
 fs.writeFileSync('sitemap.xml', sitemap);
 console.log('Generated sitemap.xml');
 
-const robots = `User-agent: *
+const robots = \`User-agent: *
 Allow: /
-Sitemap: ${data.site.url}sitemap.xml
-`;
+Sitemap: \${data.site.url}sitemap.xml
+\`;
 fs.writeFileSync('robots.txt', robots);
 console.log('Generated robots.txt');
