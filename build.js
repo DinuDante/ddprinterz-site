@@ -338,20 +338,20 @@ renderPage({
   content: notFoundContent
 });
 
-const sitemap = \`<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>\${data.site.url}</loc></url>
-  <url><loc>\${data.site.url}work.html</loc></url>
-  <url><loc>\${data.site.url}services.html</loc></url>
-  <url><loc>\${data.site.url}privacy.html</loc></url>
-  <url><loc>\${data.site.url}order-policy.html</loc></url>
-</urlset>\`;
+  <url><loc>${data.site.url}</loc></url>
+  <url><loc>${data.site.url}work.html</loc></url>
+  <url><loc>${data.site.url}services.html</loc></url>
+  <url><loc>${data.site.url}privacy.html</loc></url>
+  <url><loc>${data.site.url}order-policy.html</loc></url>
+</urlset>`;
 fs.writeFileSync('sitemap.xml', sitemap);
 console.log('Generated sitemap.xml');
 
-const robots = \`User-agent: *
+const robots = `User-agent: *
 Allow: /
-Sitemap: \${data.site.url}sitemap.xml
-\`;
+Sitemap: ${data.site.url}sitemap.xml
+`;
 fs.writeFileSync('robots.txt', robots);
 console.log('Generated robots.txt');

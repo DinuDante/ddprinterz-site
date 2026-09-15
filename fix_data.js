@@ -1,0 +1,52 @@
+const fs = require('fs');
+
+const data = {
+  "site": {
+    "name": "DDPrinterZ",
+    "founder": "DinuDante",
+    "location": "Bhubaneswar, Odisha",
+    "url": "https://dinudante.com/",
+    "email": "dineshdante.ds@gmail.com",
+    "instagram": "https://www.instagram.com/ddprinterz/",
+    "youtube": "https://www.youtube.com/@DDPrinterZ",
+    "whatsapp_url": "https://wa.me/919556703560"
+  },
+  "pricing": [
+    { "name": "Custom keychain", "desc": "Your name or logo, multicolour", "price": "₹149+" },
+    { "name": "Nameplate", "desc": "Desk or door, multicolour", "price": "₹399+" },
+    { "name": "Lithophane lamp", "desc": "Your photograph transformed into light", "price": "₹599+" },
+    { "name": "Custom PLA print", "desc": "Your design or STL file", "price": "₹4/g" },
+    { "name": "Custom PETG print", "desc": "Stronger, functional parts", "price": "₹5/g" },
+    { "name": "Prototyping", "desc": "Design help for students and businesses", "price": "Quote" }
+  ],
+  "projects": [
+    { "title": "Anime wall art", "desc": "Layered · Multicolour", "img": "assets/gallery/anime-wall-art.jpg", "img_thumb": "assets/gallery/anime-wall-art-640.jpg" },
+    { "title": "Articulated dragon", "desc": "Character figure · Moving parts", "img": "assets/gallery/dragon-figure.jpg", "img_thumb": "assets/gallery/dragon-figure-640.jpg" },
+    { "title": "Wedding keepsakes", "desc": "Names · Dates · Your colours", "img": "assets/gallery/wedding-tokens.jpg", "img_thumb": "assets/gallery/wedding-tokens-640.jpg" },
+    { "title": "Dance figurine", "desc": "Culture · Fine detail", "img": "assets/gallery/dance-figurine.jpg", "img_thumb": "assets/gallery/dance-figurine-640.jpg" },
+    { "title": "Sakura bookmark", "desc": "Three-colour detail", "img": "assets/gallery/sakura-bookmark.jpg", "img_thumb": "assets/gallery/sakura-bookmark-640.jpg" },
+    { "title": "Blossom jewellery box", "desc": "Decorative · Functional", "img": "assets/gallery/blossom-jewellery-box.jpg", "img_thumb": "assets/gallery/blossom-jewellery-box-640.jpg" },
+    { "title": "Detailed car model", "desc": "Mechanical detail · Miniature", "img": "assets/gallery/car-model.jpg", "img_thumb": "assets/gallery/car-model-640.jpg" },
+    { "title": "Charging dock", "desc": "Designed for daily use", "img": "assets/gallery/charging-dock.jpg", "img_thumb": "assets/gallery/charging-dock-640.jpg" },
+    { "title": "Desk phone stand", "desc": "Strong · Lightweight", "img": "assets/gallery/phone-stand.jpg", "img_thumb": "assets/gallery/phone-stand-640.jpg" }
+  ],
+  "videos": [
+    { "id": "GrVqXOJHH-E", "title": "Stackable blossom jewellery box", "tag": "PROJECT 01" },
+    { "id": "qJx8QoXDi78", "title": "From filament to finished product", "tag": "PROCESS" },
+    { "id": "GqWD6Tv1fzw", "title": "A personalised birthday gift for Mom", "tag": "PROJECT 02" }
+  ],
+  "faq": [
+    { "q": "How much does a custom 3D print cost?", "a": "Pricing depends on the size, material, and print time. Simple items like keychains start at ₹149, while custom prints are priced by weight (e.g., ₹4/g for PLA). We provide a clear quote before starting any work." },
+    { "q": "What information should I send?", "a": "Send us a photo, a rough sketch, or an STL file if you have one. Include approximate dimensions, your preferred colours, and whether the item needs to be strong (functional) or just decorative." },
+    { "q": "Do I need an STL file?", "a": "No, you don't need a 3D model. If you just have an idea, sketch, or reference photo, we can discuss the design. If it requires extensive 3D modelling, we'll include a design charge in your quote." },
+    { "q": "Which materials do you use?", "a": "We primarily print in PLA for colourful, detailed gifts and indoor décor, and PETG for stronger, more durable functional parts that can handle light heat and stress." },
+    { "q": "Can you print multiple colours?", "a": "Yes. We use Bambu Lab printers with AMS capability, allowing us to print true multicolour objects directly, without painting." },
+    { "q": "How long does printing take?", "a": "Most typical orders are completed within 2 to 5 days, depending on our current queue and the print's complexity. We will confirm the timeline with your quote." },
+    { "q": "Do you deliver in Bhubaneswar?", "a": "Yes, we offer local pickup and delivery within Bhubaneswar." },
+    { "q": "Do you ship outside Odisha?", "a": "Yes, we offer India-wide shipping at cost." },
+    { "q": "How are custom-order payments handled?", "a": "Since every piece is custom-made, we require a small advance payment to start the print, with the balance due upon completion/delivery." }
+  ]
+};
+
+fs.writeFileSync('src/data.json', JSON.stringify(data, null, 2), 'utf8');
+console.log('Fixed data.json encoding!');
