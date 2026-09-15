@@ -54,22 +54,39 @@ async function emit(pipeline, outBase, widths, { height = null, quality = 78 } =
  * `crop` is [left, top, width, height] in source pixels; ratio is 4:5.
  * ------------------------------------------------------------------------- */
 const GALLERY = [
+  /* Both panels are photographed twice. In wedding-tokens.jpg the two objects
+   * overlap horizontally, so no crop can isolate either one — the old crops
+   * each carried a slice of the other panel, and the figure-panel tile showed
+   * half the logo panel. In anime-wall-art.jpg they sit apart (logo ends x 555,
+   * figure frame starts x 575), so both tiles are cut from that angle instead,
+   * each showing only its own subject.
+   *
+   * Bounds read off a coordinate grid over the original, including the parts
+   * that overhang: the logo panel's black tail reaches x 70, and the figure's
+   * red flames rise well above its white frame to y 148. Logo panel spans
+   * x 70-540, y 265-615; figure panel x 575-868, y 148-838; keyboard above
+   * y 150. The figure sits left in its frame because the logo panel occupies
+   * everything to its left — the leather to the right is deliberate space, not
+   * a centring error. */
   {
     slug: 'anime-logo-panel',
-    src: 'wedding-tokens.jpg', // 1200x900 landscape, two panels on a desk
-    crop: [56, 0, 720, 900],
-    note: 'Left-hand layered circular logo panel',
+    src: 'anime-wall-art.jpg',
+    crop: [50, 155, 510, 637],
+    note: 'Circular layered logo panel, isolated; keyboard cropped out above',
   },
   {
     slug: 'anime-figure-panel',
-    src: 'anime-wall-art.jpg', // 1200x900 landscape, same pair, second angle
-    crop: [420, 0, 720, 900],
-    note: 'Right-hand layered figure wall panel',
+    src: 'anime-wall-art.jpg',
+    crop: [555, 135, 592, 740],
+    note: 'Framed layered figure panel with its flames, isolated on leather',
   },
   {
     slug: 'dragon-figure',
     src: 'dragon-figure.jpg', // 900x1200 portrait
-    crop: [0, 60, 900, 1125],
+    /* Measured: the figure spans x 20-720, y 75-1060 once the tail and its red
+     * fin are included. Narrowing to 808 drops the monitor strip above and
+     * about half the alarm clock at the right without touching the object. */
+    crop: [0, 70, 808, 1010],
     brighten: 1.06,
   },
   {
