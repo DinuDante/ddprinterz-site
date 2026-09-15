@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d1512">
+<link rel="icon" href="/assets/brand/logo-small.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/logo-small.png">
 <title>Order Policy | DDPrinterZ</title>
 <meta name="description" content="Order, payment, and cancellation policies for DDPrinterZ custom 3D printing services.">
 <script>(()=>{const saved=localStorage.getItem('ddprinterz-theme');document.documentElement.dataset.theme=saved||(matchMedia('(prefers-color-scheme:light)').matches?'day':'night')})()</script>
@@ -32,7 +34,7 @@
 <nav>
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="DDPrinterZ home">
-      <img class="brand-mark" src="/assets/brand/logo.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;">
+      <img class="brand-mark" src="/assets/brand/logo-small.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;" width="128" height="128">
       <span class="brand-name"><strong>DD</strong><i>PrinterZ</i></span>
     </a>
     <div class="nav-controls">
@@ -59,17 +61,13 @@
   <div class="wrap" style="max-width: 800px; margin: 0 auto;">
     <h1 class="title">Order Policy</h1>
     <div style="margin-top: 40px; color: var(--muted); line-height: 1.8;">
-      <p>DRAFT — pending owner review.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Custom Nature</h3>
-      <p>All custom products are produced to approved specifications. Due to the custom nature of 3D printing, slight variations in colour or surface texture (layer lines) are a normal part of the process.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Advance Payment</h3>
-      <p>A small advance payment is required to start printing, with the balance due upon completion/delivery.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Cancellations & Changes</h3>
-      <p>Changes or cancellations are only possible before printing begins. Once a custom print has started, we cannot offer refunds.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Customer-Supplied Files</h3>
-      <p>Customers must have the right or permission to use any designs or logos they submit. DDPrinterZ does not claim ownership of third-party trademarks or characters.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Safety</h3>
-      <p>FDM prints are not certified for food contact, medical use, or load-bearing safety-critical use unless explicitly stated.</p>
+      <p>This policy outlines the standard process for ordering custom 3D prints from DDPrinterZ.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Custom Nature & Materials</h3>
+      <p>All products are produced to approved specifications using FDM 3D printing. Variations in colour or surface texture (layer lines) are a normal part of this process. We use PLA for indoor/decorative objects and PETG for durable functional parts. Our prints are not certified for direct food contact or medical use.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Order Confirmation & Advance</h3>
+      <p>We confirm material, colour, price, and timeline before any work begins. A small advance payment is required to start the print run. The exact amount is determined during the quoting process.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Production & Delivery</h3>
+      <p>Production typically takes 2–5 days. Every piece is individually inspected and hand-finished by DinuDante. Orders can be picked up in Bhubaneswar or shipped India-wide at cost.</p>
     </div>
   </div>
 </section>
@@ -96,6 +94,15 @@
   <img src="assets/brand/whatsapp.webp" alt="" width="256" height="256">
 </a>
 
+<dialog id="lightbox" aria-label="Image Viewer">
+  <div class="lb-content">
+    <button class="lb-close" aria-label="Close viewer">×</button>
+    <img id="lb-img" src="" alt="Project view">
+    <div class="lb-caption" id="lb-caption"></div>
+    <a class="btn lb-enquire" id="lb-enquire" href="#" target="_blank" rel="noopener noreferrer">Enquire about this</a>
+  </div>
+</dialog>
+
 <script>
 const b=document.querySelector('.menu'),l=document.querySelector('.links'),toggle=document.querySelector('.theme-toggle'),themeLabel=document.querySelector('.theme-label'),metaTheme=document.querySelector('meta[name="theme-color"]');
 b.onclick=()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)};
@@ -104,7 +111,27 @@ function syncTheme(){const day=document.documentElement.dataset.theme==='day';if
 if(toggle) {
   toggle.onclick=()=>{const next=document.documentElement.dataset.theme==='night'?'day':'night';document.documentElement.dataset.theme=next;localStorage.setItem('ddprinterz-theme',next);syncTheme()};
 }
+}
 syncTheme();
+
+// Lightbox logic
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-caption'), lbEnq = document.getElementById('lb-enquire');
+document.querySelectorAll('a.tile').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    lbImg.src = el.href;
+    const title = el.querySelector('b').textContent;
+    lbCap.textContent = title;
+    lbEnq.href = 'https://wa.me/919556703560?text=' + encodeURIComponent('Hi DinuDante! I am interested in something like: ' + title);
+    lb.showModal();
+    document.body.style.overflow = 'hidden';
+  });
+});
+if(lb) {
+  lb.querySelector('.lb-close').onclick = () => { lb.close(); document.body.style.overflow = ''; };
+  lb.addEventListener('click', e => { if(e.target === lb) { lb.close(); document.body.style.overflow = ''; } });
+  lb.addEventListener('close', () => { document.body.style.overflow = ''; });
+}
 </script>
 </body>
 </html>

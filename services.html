@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d1512">
+<link rel="icon" href="/assets/brand/logo-small.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/logo-small.png">
 <title>Custom Gifts, Prototypes & 3D Printing Services | DDPrinterZ</title>
 <meta name="description" content="DDPrinterZ offers custom 3D printing services in Bhubaneswar including personalised gifts, functional prototypes, and models using PLA and PETG.">
 <script>(()=>{const saved=localStorage.getItem('ddprinterz-theme');document.documentElement.dataset.theme=saved||(matchMedia('(prefers-color-scheme:light)').matches?'day':'night')})()</script>
@@ -32,7 +34,7 @@
 <nav>
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="DDPrinterZ home">
-      <img class="brand-mark" src="/assets/brand/logo.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;">
+      <img class="brand-mark" src="/assets/brand/logo-small.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;" width="128" height="128">
       <span class="brand-name"><strong>DD</strong><i>PrinterZ</i></span>
     </a>
     <div class="nav-controls">
@@ -60,7 +62,7 @@
     <div class="head">
       <div>
         <p class="eyebrow">What we make</p>
-        <h2 class="title">From thoughtful gifts<br>to working prototypes.</h2>
+        <h1 class="title">From thoughtful gifts<br>to working prototypes.</h1>
       </div>
       <p class="muted">Bring a photo, sketch or STL. We’ll turn it into a polished physical object.</p>
     </div>
@@ -92,7 +94,7 @@
     </div>
     
     <div class="process-panel" style="margin-top: 80px;">
-      <img src="assets/infographics/making-process.webp" alt="Illustrated journey from an idea sketch through 3D modelling and printing to a finished object" width="1440" height="540" loading="lazy" decoding="async">
+      <img src="assets/infographics/making-process.webp" style="max-width: 100%; height: auto;" alt="Illustrated journey from an idea sketch through 3D modelling and printing to a finished object" width="1440" height="540" loading="lazy" decoding="async">
       <div class="process-legend">
         <div><small>01</small><b>Share the idea</b></div>
         <div><small>02</small><b>Shape the model</b></div>
@@ -125,6 +127,15 @@
   <img src="assets/brand/whatsapp.webp" alt="" width="256" height="256">
 </a>
 
+<dialog id="lightbox" aria-label="Image Viewer">
+  <div class="lb-content">
+    <button class="lb-close" aria-label="Close viewer">×</button>
+    <img id="lb-img" src="" alt="Project view">
+    <div class="lb-caption" id="lb-caption"></div>
+    <a class="btn lb-enquire" id="lb-enquire" href="#" target="_blank" rel="noopener noreferrer">Enquire about this</a>
+  </div>
+</dialog>
+
 <script>
 const b=document.querySelector('.menu'),l=document.querySelector('.links'),toggle=document.querySelector('.theme-toggle'),themeLabel=document.querySelector('.theme-label'),metaTheme=document.querySelector('meta[name="theme-color"]');
 b.onclick=()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)};
@@ -133,7 +144,27 @@ function syncTheme(){const day=document.documentElement.dataset.theme==='day';if
 if(toggle) {
   toggle.onclick=()=>{const next=document.documentElement.dataset.theme==='night'?'day':'night';document.documentElement.dataset.theme=next;localStorage.setItem('ddprinterz-theme',next);syncTheme()};
 }
+}
 syncTheme();
+
+// Lightbox logic
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-caption'), lbEnq = document.getElementById('lb-enquire');
+document.querySelectorAll('a.tile').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    lbImg.src = el.href;
+    const title = el.querySelector('b').textContent;
+    lbCap.textContent = title;
+    lbEnq.href = 'https://wa.me/919556703560?text=' + encodeURIComponent('Hi DinuDante! I am interested in something like: ' + title);
+    lb.showModal();
+    document.body.style.overflow = 'hidden';
+  });
+});
+if(lb) {
+  lb.querySelector('.lb-close').onclick = () => { lb.close(); document.body.style.overflow = ''; };
+  lb.addEventListener('click', e => { if(e.target === lb) { lb.close(); document.body.style.overflow = ''; } });
+  lb.addEventListener('close', () => { document.body.style.overflow = ''; });
+}
 </script>
 </body>
 </html>

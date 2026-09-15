@@ -28,7 +28,7 @@ const indexContent = `
         <a class="btn" href="work.html"><svg class="icon" aria-hidden="true"><use href="#icon-cube"/></svg>See real prints</a>
       </div>
       <div class="trust">
-        <span>Same-week delivery</span>
+        <span>Same-week dispatch</span>
         <span>True multicolour</span>
         <span>Maker-direct support</span>
       </div>
@@ -43,7 +43,7 @@ const indexContent = `
       <h2 class="title">Clear from<br>the start.</h2>
       <p class="muted">Starting prices help you plan before we confirm your custom quote.</p>
       <div class="material-visual">
-        <img src="assets/infographics/material-guide.webp" alt="Visual comparison of PLA for colourful indoor objects and PETG for durable functional parts" width="760" height="760" loading="lazy" decoding="async">
+        <img src="assets/infographics/material-guide.webp" style="max-width: 100%; height: auto;" alt="Visual comparison of PLA for colourful indoor objects and PETG for durable functional parts" width="760" height="760" loading="lazy" decoding="async">
         <div class="material-key">
           <div><b>PLA</b><span>Colourful gifts & décor</span></div>
           <div><b>PETG</b><span>Durable functional parts</span></div>
@@ -54,7 +54,7 @@ const indexContent = `
       <div class="price-list">
         ${data.pricing.map(p => `<div class="price"><b>${p.name}</b><span>${p.desc}</span><b>${p.price}</b></div>`).join('')}
       </div>
-      <p class="note">Minimum order ₹400 · Delivery in Bhubaneswar · India-wide shipping at cost</p>
+      <p class="note">Minimum project total is ₹400 (can combine multiple small items) · Delivery in Bhubaneswar · India-wide shipping at cost</p>
     </div>
   </div>
 </section>
@@ -66,7 +66,7 @@ const indexContent = `
         <p class="eyebrow">How to order</p>
         <h2 class="title">From your idea<br>to your hands.</h2>
       </div>
-      <p>Most orders are ready in 2–5 days. Timing is confirmed before printing begins.</p>
+      <p>Production typically takes 2–5 days. Dispatch and shipping timing are confirmed before printing begins.</p>
     </div>
     <div class="steps">
       <article class="step"><span class="number">1</span><h3>Share your idea</h3><p>Send a photo, sketch or STL on <a href="https://ig.me/m/ddprinterz" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Instagram</a> (preferred) or <a href="https://wa.me/919556703560?text=Hi%20DinuDante%21%20I%20want%20a%20custom%203D%20print." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>.</p></article>
@@ -152,7 +152,7 @@ const workContent = `
     <div class="head">
       <div>
         <p class="eyebrow">Real DDPrinterZ projects</p>
-        <h2 class="title">Fresh off my<br>print bed.</h2>
+        <h1 class="title">Fresh off my<br>print bed.</h1>
       </div>
       <p class="muted">Every photograph below comes from the DinuDante workshop—real prints, real details, no stock imagery.</p>
     </div>
@@ -171,7 +171,7 @@ const workContent = `
       <a class="btn" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>More on Instagram</a>
     </div>
     
-    <div class="head" style="margin-top: 100px;">
+    <div class="head" id="watch" style="margin-top: 100px; scroll-margin-top: 100px;">
       <div>
         <p class="eyebrow">Watch the process</p>
         <h2 class="title">Printing, finishing<br>and the final reveal.</h2>
@@ -208,7 +208,7 @@ const servicesContent = `
     <div class="head">
       <div>
         <p class="eyebrow">What we make</p>
-        <h2 class="title">From thoughtful gifts<br>to working prototypes.</h2>
+        <h1 class="title">From thoughtful gifts<br>to working prototypes.</h1>
       </div>
       <p class="muted">Bring a photo, sketch or STL. We’ll turn it into a polished physical object.</p>
     </div>
@@ -240,13 +240,18 @@ const servicesContent = `
     </div>
     
     <div class="process-panel" style="margin-top: 80px;">
-      <img src="assets/infographics/making-process.webp" alt="Illustrated journey from an idea sketch through 3D modelling and printing to a finished object" width="1440" height="540" loading="lazy" decoding="async">
+      <img src="assets/infographics/making-process.webp" style="max-width: 100%; height: auto;" alt="Illustrated journey from an idea sketch through 3D modelling and printing to a finished object" width="1440" height="540" loading="lazy" decoding="async">
       <div class="process-legend">
         <div><small>01</small><b>Share the idea</b></div>
         <div><small>02</small><b>Shape the model</b></div>
         <div><small>03</small><b>Print in colour</b></div>
         <div><small>04</small><b>Finish by hand</b></div>
       </div>
+    </div>
+    
+    <div class="actions" style="margin-top: 60px; justify-content: center;">
+      <a class="btn wa" href="https://wa.me/919556703560?text=Hi%20DinuDante!%20I%20have%20an%20idea%20for%20a%20custom%203D%20print." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>Discuss your project</a>
+      <a class="btn" href="/#pricing">View pricing</a>
     </div>
   </div>
 </section>
@@ -290,17 +295,13 @@ const policyContent = `
   <div class="wrap" style="max-width: 800px; margin: 0 auto;">
     <h1 class="title">Order Policy</h1>
     <div style="margin-top: 40px; color: var(--muted); line-height: 1.8;">
-      <p>DRAFT — pending owner review.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Custom Nature</h3>
-      <p>All custom products are produced to approved specifications. Due to the custom nature of 3D printing, slight variations in colour or surface texture (layer lines) are a normal part of the process.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Advance Payment</h3>
-      <p>A small advance payment is required to start printing, with the balance due upon completion/delivery.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Cancellations & Changes</h3>
-      <p>Changes or cancellations are only possible before printing begins. Once a custom print has started, we cannot offer refunds.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Customer-Supplied Files</h3>
-      <p>Customers must have the right or permission to use any designs or logos they submit. DDPrinterZ does not claim ownership of third-party trademarks or characters.</p>
-      <h3 style="color: var(--ink); margin-top: 30px;">Safety</h3>
-      <p>FDM prints are not certified for food contact, medical use, or load-bearing safety-critical use unless explicitly stated.</p>
+      <p>This policy outlines the standard process for ordering custom 3D prints from DDPrinterZ.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Custom Nature & Materials</h3>
+      <p>All products are produced to approved specifications using FDM 3D printing. Variations in colour or surface texture (layer lines) are a normal part of this process. We use PLA for indoor/decorative objects and PETG for durable functional parts. Our prints are not certified for direct food contact or medical use.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Order Confirmation & Advance</h3>
+      <p>We confirm material, colour, price, and timeline before any work begins. A small advance payment is required to start the print run. The exact amount is determined during the quoting process.</p>
+      <h3 style="color: var(--ink); margin-top: 30px;">Production & Delivery</h3>
+      <p>Production typically takes 2–5 days. Every piece is individually inspected and hand-finished by DinuDante. Orders can be picked up in Bhubaneswar or shipped India-wide at cost.</p>
     </div>
   </div>
 </section>

@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d1512">
+<link rel="icon" href="/assets/brand/logo-small.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/logo-small.png">
 <title>Real 3D Printing Projects | DDPrinterZ</title>
 <meta name="description" content="View real 3D printing projects completed by DDPrinterZ in Bhubaneswar. Personalised gifts, prototypes, and detailed multicolour models.">
 <script>(()=>{const saved=localStorage.getItem('ddprinterz-theme');document.documentElement.dataset.theme=saved||(matchMedia('(prefers-color-scheme:light)').matches?'day':'night')})()</script>
@@ -32,7 +34,7 @@
 <nav>
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="DDPrinterZ home">
-      <img class="brand-mark" src="/assets/brand/logo.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;">
+      <img class="brand-mark" src="/assets/brand/logo-small.png" alt="DDPrinterZ Logo" style="border-radius: 50%; object-fit: cover;" width="128" height="128">
       <span class="brand-name"><strong>DD</strong><i>PrinterZ</i></span>
     </a>
     <div class="nav-controls">
@@ -60,15 +62,15 @@
     <div class="head">
       <div>
         <p class="eyebrow">Real DDPrinterZ projects</p>
-        <h2 class="title">Fresh off my<br>print bed.</h2>
+        <h1 class="title">Fresh off my<br>print bed.</h1>
       </div>
       <p class="muted">Every photograph below comes from the DinuDante workshop—real prints, real details, no stock imagery.</p>
     </div>
     <div class="gallery">
       
-      <a class="tile" href="assets/gallery/anime-wall-art.jpg">
+      <a class="tile" href="assets/gallery/wedding-tokens.jpg">
         <div class="visual">
-          <img src="assets/gallery/anime-wall-art-640.jpg" srcset="assets/gallery/anime-wall-art-640.jpg 640w, assets/gallery/anime-wall-art.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Anime wall art" loading="lazy" width="900" height="1200" decoding="async">
+          <img src="assets/gallery/wedding-tokens-640.jpg" srcset="assets/gallery/wedding-tokens-640.jpg 640w, assets/gallery/wedding-tokens.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Anime wall art" loading="lazy" width="900" height="1200" decoding="async">
         </div>
         <div class="label"><b>Anime wall art</b><span>Layered · Multicolour</span></div>
       </a>
@@ -78,9 +80,9 @@
         </div>
         <div class="label"><b>Articulated dragon</b><span>Character figure · Moving parts</span></div>
       </a>
-      <a class="tile" href="assets/gallery/wedding-tokens.jpg">
+      <a class="tile" href="assets/gallery/anime-wall-art.jpg">
         <div class="visual">
-          <img src="assets/gallery/wedding-tokens-640.jpg" srcset="assets/gallery/wedding-tokens-640.jpg 640w, assets/gallery/wedding-tokens.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Wedding keepsakes" loading="lazy" width="900" height="1200" decoding="async">
+          <img src="assets/gallery/anime-wall-art-640.jpg" srcset="assets/gallery/anime-wall-art-640.jpg 640w, assets/gallery/anime-wall-art.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Wedding keepsakes" loading="lazy" width="900" height="1200" decoding="async">
         </div>
         <div class="label"><b>Wedding keepsakes</b><span>Names · Dates · Your colours</span></div>
       </a>
@@ -110,9 +112,9 @@
       </a>
       <a class="tile" href="assets/gallery/charging-dock.jpg">
         <div class="visual">
-          <img src="assets/gallery/charging-dock-640.jpg" srcset="assets/gallery/charging-dock-640.jpg 640w, assets/gallery/charging-dock.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Charging dock" loading="lazy" width="900" height="1200" decoding="async">
+          <img src="assets/gallery/charging-dock-640.jpg" srcset="assets/gallery/charging-dock-640.jpg 640w, assets/gallery/charging-dock.jpg 1200w" sizes="(max-width:670px) 86vw, 24vw" alt="Custom name pieces" loading="lazy" width="900" height="1200" decoding="async">
         </div>
-        <div class="label"><b>Charging dock</b><span>Designed for daily use</span></div>
+        <div class="label"><b>Custom name pieces</b><span>Personalised typography</span></div>
       </a>
       <a class="tile" href="assets/gallery/phone-stand.jpg">
         <div class="visual">
@@ -127,7 +129,7 @@
       <a class="btn" href="https://www.instagram.com/ddprinterz/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>More on Instagram</a>
     </div>
     
-    <div class="head" style="margin-top: 100px;">
+    <div class="head" id="watch" style="margin-top: 100px; scroll-margin-top: 100px;">
       <div>
         <p class="eyebrow">Watch the process</p>
         <h2 class="title">Printing, finishing<br>and the final reveal.</h2>
@@ -183,6 +185,15 @@
   <img src="assets/brand/whatsapp.webp" alt="" width="256" height="256">
 </a>
 
+<dialog id="lightbox" aria-label="Image Viewer">
+  <div class="lb-content">
+    <button class="lb-close" aria-label="Close viewer">×</button>
+    <img id="lb-img" src="" alt="Project view">
+    <div class="lb-caption" id="lb-caption"></div>
+    <a class="btn lb-enquire" id="lb-enquire" href="#" target="_blank" rel="noopener noreferrer">Enquire about this</a>
+  </div>
+</dialog>
+
 <script>
 const b=document.querySelector('.menu'),l=document.querySelector('.links'),toggle=document.querySelector('.theme-toggle'),themeLabel=document.querySelector('.theme-label'),metaTheme=document.querySelector('meta[name="theme-color"]');
 b.onclick=()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)};
@@ -191,7 +202,27 @@ function syncTheme(){const day=document.documentElement.dataset.theme==='day';if
 if(toggle) {
   toggle.onclick=()=>{const next=document.documentElement.dataset.theme==='night'?'day':'night';document.documentElement.dataset.theme=next;localStorage.setItem('ddprinterz-theme',next);syncTheme()};
 }
+}
 syncTheme();
+
+// Lightbox logic
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-caption'), lbEnq = document.getElementById('lb-enquire');
+document.querySelectorAll('a.tile').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    lbImg.src = el.href;
+    const title = el.querySelector('b').textContent;
+    lbCap.textContent = title;
+    lbEnq.href = 'https://wa.me/919556703560?text=' + encodeURIComponent('Hi DinuDante! I am interested in something like: ' + title);
+    lb.showModal();
+    document.body.style.overflow = 'hidden';
+  });
+});
+if(lb) {
+  lb.querySelector('.lb-close').onclick = () => { lb.close(); document.body.style.overflow = ''; };
+  lb.addEventListener('click', e => { if(e.target === lb) { lb.close(); document.body.style.overflow = ''; } });
+  lb.addEventListener('close', () => { document.body.style.overflow = ''; });
+}
 </script>
 </body>
 </html>
