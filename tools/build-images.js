@@ -258,7 +258,7 @@ async function run() {
         .toFile(path.join(OUT_BRAND, `favicon-${size}.png`));
     }
     // Also generate a favicon.ico at root for better compatibility
-    await sharp(faviconSrc)
+    await sharp(logo)
       .resize(32, 32, { kernel: 'lanczos3' })
       .toFile('favicon.ico');
     manifest.push({
