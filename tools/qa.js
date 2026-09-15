@@ -141,7 +141,7 @@ async function setTheme(page, theme) {
         });
 
         await page.setViewport({ width: vp.width, height: vp.height });
-        await page.goto(BASE + pg.url, { waitUntil: 'networkidle0' });
+          await page.goto(BASE + pg.url, { waitUntil: 'domcontentloaded' });
         await setTheme(page, theme);
         await new Promise((r) => setTimeout(r, 120));
 
@@ -206,7 +206,7 @@ async function setTheme(page, theme) {
   ]) {
     const page = await browser.newPage();
     await page.setViewport(vp);
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const tiles = await page.evaluate(() =>
       [...document.querySelectorAll('.gallery .tile')].map((t) => {
         const r = t.getBoundingClientRect();
@@ -243,7 +243,7 @@ async function setTheme(page, theme) {
   {
     const page = await browser.newPage();
     await page.setViewport({ width: 1363, height: 936 });
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const heights = await page.evaluate(() => {
       const g = document.querySelector('.gallery');
       for (let i = 0; i < 5; i++) g.appendChild(g.firstElementChild.cloneNode(true));
@@ -264,7 +264,7 @@ async function setTheme(page, theme) {
     for (const pg of PAGES) {
       const page = await browser.newPage();
       await page.setViewport({ width: 1363, height: 936 });
-      await page.goto(BASE + pg.url, { waitUntil: 'networkidle0' });
+      await page.goto(BASE + pg.url, { waitUntil: 'domcontentloaded' });
       await setTheme(page, theme);
       await new Promise((r) => setTimeout(r, 100));
 

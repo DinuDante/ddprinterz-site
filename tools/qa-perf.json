@@ -1,66 +1,66 @@
 [
   {
     "url": "/",
-    "lcp": 1264,
+    "lcp": 864,
     "cls": 0,
-    "fcp": 1264,
-    "domContentLoaded": 1279,
-    "load": 1281,
+    "fcp": 864,
+    "domContentLoaded": 835,
+    "load": 844,
     "requests": 7,
-    "transferKB": 220,
+    "transferKB": 159,
     "byType": {
-      "image/png": "8KB",
-      "text/html": "46KB",
+      "text/html": "11KB",
+      "text/css": "7KB",
       "image/webp": "134KB",
-      "text/css": "33KB"
+      "image/png": "7KB"
     }
   },
   {
     "url": "/services.html",
-    "lcp": 2040,
+    "lcp": 1752,
     "cls": 0,
-    "fcp": 1156,
-    "domContentLoaded": 1121,
-    "load": 2036,
+    "fcp": 388,
+    "domContentLoaded": 359,
+    "load": 1737,
     "requests": 7,
-    "transferKB": 369,
+    "transferKB": 323,
     "byType": {
-      "text/html": "28KB",
-      "image/png": "6KB",
-      "image/webp": "303KB",
-      "text/css": "33KB"
+      "text/html": "8KB",
+      "text/css": "7KB",
+      "image/png": "5KB",
+      "image/webp": "303KB"
     }
   },
   {
     "url": "/work.html",
-    "lcp": 1132,
+    "lcp": 492,
     "cls": 0,
-    "fcp": 1104,
-    "domContentLoaded": 1119,
-    "load": 1122,
-    "requests": 8,
-    "transferKB": 492,
+    "fcp": 492,
+    "domContentLoaded": 468,
+    "load": 469,
+    "requests": 7,
+    "transferKB": 433,
     "byType": {
-      "text/html": "41KB",
-      "image/png": "6KB",
-      "image/webp": "412KB",
-      "text/css": "33KB"
+      "text/html": "9KB",
+      "text/css": "7KB",
+      "image/png": "5KB",
+      "image/webp": "412KB"
     }
   },
   {
     "url": "/order-policy.html",
-    "lcp": 832,
+    "lcp": 404,
     "cls": 0,
-    "fcp": 832,
-    "domContentLoaded": 830,
-    "load": 831,
+    "fcp": 244,
+    "domContentLoaded": 234,
+    "load": 392,
     "requests": 4,
-    "transferKB": 76,
+    "transferKB": 35,
     "byType": {
-      "text/html": "21KB",
-      "image/png": "6KB",
-      "image/webp": "17KB",
-      "text/css": "33KB"
+      "text/html": "7KB",
+      "text/css": "7KB",
+      "image/png": "5KB",
+      "image/webp": "17KB"
     }
   }
 ]

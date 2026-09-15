@@ -57,7 +57,7 @@ const out = [];
       }).observe({ type: 'layout-shift', buffered: true });
     });
 
-    await page.goto(BASE + url, { waitUntil: 'networkidle0', timeout: 60000 });
+    await page.goto(BASE + url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await new Promise((r) => setTimeout(r, 1500));
 
     const m = await page.evaluate(() => {

@@ -39,7 +39,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   {
     /* 1. direct load */
     const page = await newPage();
-    await page.goto(BASE + '/work.html#watch', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html#watch', { waitUntil: 'domcontentloaded' });
     await sleep(400);
     const direct = await page.evaluate(() => {
       const t = document.getElementById('watch');
@@ -60,7 +60,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   {
     /* 2. same-page activation from the top of work.html */
     const page = await newPage();
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const before = await page.evaluate(() => scrollY);
     await page.evaluate(() => {
       [...document.querySelectorAll('.nav-links a')].find((a) => a.textContent.trim() === 'Watch').click();
@@ -78,9 +78,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   {
     /* 3. cross-page activation from the home page */
     const page = await newPage();
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     await Promise.all([
-      page.waitForNavigation({ waitUntil: 'networkidle0' }),
+      page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
       page.evaluate(() => {
         [...document.querySelectorAll('.nav-links a')].find((a) => a.textContent.trim() === 'Watch').click();
       }),
@@ -103,9 +103,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     ['contact-cross-page', '/services.html', '#contact'],
   ]) {
     const page = await newPage();
-    await page.goto(BASE + from, { waitUntil: 'networkidle0' });
+    await page.goto(BASE + from, { waitUntil: 'domcontentloaded' });
     await Promise.all([
-      page.waitForNavigation({ waitUntil: 'networkidle0' }),
+      page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
       page.evaluate((h) => {
         document.querySelector(`.nav-links a[href="/${h}"]`).click();
       }, hash),
@@ -124,7 +124,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* =============================================================== lightbox */
   {
     const page = await newPage();
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
 
     /* scroll somewhere in the middle so scroll restoration is observable */
     await page.evaluate(() => scrollTo(0, 900));
@@ -231,7 +231,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* touch swipe inside the viewer */
   {
     const page = await newPage(390, 844);
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     await page.evaluate(() => document.querySelectorAll('.tile')[0].click());
     await sleep(300);
     const swiped = await page.evaluate(() => {
@@ -255,7 +255,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
      leaves the site, so the viewer is checked on this page too. */
   {
     const page = await newPage(1363, 936);
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const present = await page.evaluate(() => ({
       tiles: document.querySelectorAll('.tile[data-full]').length,
       dialog: !!document.getElementById('lightbox'),
@@ -302,7 +302,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* ================================================================= menu */
   {
     const page = await newPage(390, 844);
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const initial = await page.evaluate(() => ({
       btnVisible: getComputedStyle(document.querySelector('.menu-btn')).display !== 'none',
       linksVisible: getComputedStyle(document.getElementById('nav-links')).display !== 'none',
@@ -360,7 +360,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* ================================================================ theme */
   {
     const page = await newPage();
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const before = await page.evaluate(() => ({
       theme: document.documentElement.dataset.theme,
       pressed: document.querySelector('.theme-toggle').getAttribute('aria-pressed'),
@@ -381,13 +381,13 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     rec('theme', 'toggle-state-accurate', after.pressed !== before.pressed && after.label !== before.label ? 'pass' : 'fail', `aria-pressed ${before.pressed} -> ${after.pressed}; label "${after.label}"`);
     rec('theme', 'theme-color-meta-updates', after.meta !== before.meta ? 'pass' : 'fail', `${before.meta} -> ${after.meta}`);
 
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const persisted = await page.evaluate(() => document.documentElement.dataset.theme);
     rec('theme', 'persists-across-pages', persisted === after.theme ? 'pass' : 'fail', `${after.theme} kept on work.html: ${persisted}`);
 
     /* invalid stored value must not break the page */
     await page.evaluate(() => localStorage.setItem('ddprinterz-theme', 'banana'));
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const recovered = await page.evaluate(() => document.documentElement.dataset.theme);
     rec('theme', 'invalid-stored-value-handled', ['day', 'night'].includes(recovered) ? 'pass' : 'fail', `stored "banana" -> resolved "${recovered}"`);
     await page.close();
@@ -405,7 +405,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     });
     const errs = [];
     page.on('pageerror', (e) => errs.push(e.message));
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     await page.evaluate(() => document.querySelector('.theme-toggle').click());
     await sleep(200);
     const state = await page.evaluate(() => document.documentElement.dataset.theme);
@@ -420,7 +420,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     page.on('request', (r) => {
       if (/youtube|ytimg|google/.test(r.url())) ytRequests.push(r.url());
     });
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     rec('video', 'no-third-party-request-before-play', ytRequests.length === 0 ? 'pass' : 'fail', ytRequests.length ? ytRequests.slice(0, 2).join(' | ') : 'zero YouTube/Google requests on load');
 
     await page.evaluate(() => document.getElementById('watch').scrollIntoView());
@@ -470,7 +470,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     ['services-390', '/services.html', 390, 844],
   ]) {
     const page = await newPage(w, h);
-    await page.goto(BASE + url, { waitUntil: 'networkidle0' });
+    await page.goto(BASE + url, { waitUntil: 'domcontentloaded' });
     const small = await page.evaluate(() => {
       const out = [];
       document.querySelectorAll('a, button, summary').forEach((el) => {
@@ -491,7 +491,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* ==================================================== keyboard operation */
   {
     const page = await newPage();
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     await page.keyboard.press('Tab');
     const first = await page.evaluate(() => {
       const a = document.activeElement;
@@ -535,7 +535,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     const page = await browser.newPage();
     await page.setJavaScriptEnabled(false);
     await page.setViewport({ width: 1363, height: 936 });
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const noJs = await page.evaluate(() => 1).catch(() => null);
     const html = await page.content();
     const tilesLinked = (html.match(/class="tile"/g) || []).length;
@@ -549,7 +549,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   /* ================================================ external handoff URLs */
   {
     const page = await newPage();
-    await page.goto(BASE + '/', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
     const links = await page.evaluate(() =>
       [...document.querySelectorAll('a[href^="http"], a[href^="mailto"]')].map((a) => ({
         href: a.href,
@@ -582,7 +582,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     /* 200% zoom of a 1280px window is a 640px CSS viewport. */
     const page = await newPage(640, 400);
     for (const url of ['/', '/work.html', '/services.html', '/order-policy.html']) {
-      await page.goto(BASE + url, { waitUntil: 'networkidle0' });
+      await page.goto(BASE + url, { waitUntil: 'domcontentloaded' });
       const m = await page.evaluate(() => ({
         sw: document.documentElement.scrollWidth,
         cw: document.documentElement.clientWidth,
@@ -596,7 +596,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   {
     const page = await newPage();
     await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
-    await page.goto(BASE + '/work.html', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html', { waitUntil: 'domcontentloaded' });
     const rm = await page.evaluate(() => ({
       scroll: getComputedStyle(document.documentElement).scrollBehavior,
       tileTransition: getComputedStyle(document.querySelector('.tile')).transitionDuration,
@@ -604,7 +604,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     rec('reduced-motion', 'honoured', rm.scroll === 'auto' && parseFloat(rm.tileTransition) < 0.01 ? 'pass' : 'fail', `scroll-behavior ${rm.scroll}, tile transition ${rm.tileTransition}`);
 
     /* the Watch anchor must still arrive without smooth scrolling */
-    await page.goto(BASE + '/work.html#watch', { waitUntil: 'networkidle0' });
+    await page.goto(BASE + '/work.html#watch', { waitUntil: 'domcontentloaded' });
     await sleep(400);
     const arrived = await page.evaluate(() => {
       const t = document.getElementById('watch');
@@ -621,7 +621,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     ['/work.html', 'Our work'],
   ]) {
     const page = await newPage();
-    await page.goto(BASE + url, { waitUntil: 'networkidle0' });
+    await page.goto(BASE + url, { waitUntil: 'domcontentloaded' });
     const current = await page.evaluate(() => {
       const a = document.querySelector('.nav-links a[aria-current="page"]');
       return a ? a.textContent.trim() : null;

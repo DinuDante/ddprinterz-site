@@ -3,37 +3,37 @@
     "area": "watch",
     "check": "direct-load",
     "status": "pass",
-    "detail": "scrolled to 1998px, target 90px below viewport top, clear of the 67px header"
+    "detail": "scrolled to 1672px, target 416px below viewport top, clear of the 67px header"
   },
   {
     "area": "watch",
     "check": "same-page-click",
     "status": "pass",
-    "detail": "scrollY 0 -> 1996, target top 92, header 67, hash #watch"
+    "detail": "scrollY 0 -> 1995, target top 93, header 67, hash #watch"
   },
   {
     "area": "watch",
     "check": "cross-page-click",
     "status": "pass",
-    "detail": "/work.html#watch, scrollY 1998, target top 90, header 67"
+    "detail": "/work.html#watch, scrollY 1826, target top 262, header 67"
   },
   {
     "area": "anchors",
     "check": "pricing-cross-page",
     "status": "pass",
-    "detail": "scrollY 2816, target top 90, header 67"
+    "detail": "scrollY 2500, target top 406, header 67"
   },
   {
     "area": "anchors",
     "check": "order-cross-page",
     "status": "pass",
-    "detail": "scrollY 3819, target top 90, header 67"
+    "detail": "scrollY 3165, target top 744, header 67"
   },
   {
     "area": "anchors",
     "check": "contact-cross-page",
     "status": "pass",
-    "detail": "scrollY 6570, target top 244, header 67"
+    "detail": "scrollY 4571, target top 2243, header 67"
   },
   {
     "area": "lightbox",
@@ -63,7 +63,7 @@
     "area": "lightbox",
     "check": "full-image-fallback",
     "status": "pass",
-    "detail": "http://localhost:4173/assets/gallery/blossom-jewellery-box-1200.jpg"
+    "detail": "https://dinudante.com/assets/gallery/blossom-jewellery-box-1200.jpg"
   },
   {
     "area": "lightbox",

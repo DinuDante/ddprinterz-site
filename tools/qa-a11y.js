@@ -24,7 +24,7 @@ const PAGES = ['/', '/services.html', '/work.html', '/privacy.html', '/order-pol
     for (const url of PAGES) {
       const page = await browser.newPage();
       await page.setViewport({ width: 1363, height: 936 });
-      await page.goto(BASE + url, { waitUntil: 'networkidle0' });
+      await page.goto(BASE + url, { waitUntil: 'domcontentloaded' });
       await page.evaluate((t) => { document.documentElement.dataset.theme = t; }, theme);
       await new Promise((r) => setTimeout(r, 300));
       await page.evaluate(axeSource);
