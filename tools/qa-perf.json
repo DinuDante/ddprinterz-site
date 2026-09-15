@@ -1,11 +1,11 @@
 [
   {
     "url": "/",
-    "lcp": 1236,
+    "lcp": 1180,
     "cls": 0,
-    "fcp": 1236,
-    "domContentLoaded": 1287,
-    "load": 1288,
+    "fcp": 1180,
+    "domContentLoaded": 1150,
+    "load": 1154,
     "requests": 7,
     "transferKB": 217,
     "byType": {
@@ -19,9 +19,9 @@
     "url": "/services.html",
     "lcp": 2036,
     "cls": 0,
-    "fcp": 1028,
-    "domContentLoaded": 985,
-    "load": 2027,
+    "fcp": 1088,
+    "domContentLoaded": 1044,
+    "load": 2026,
     "requests": 7,
     "transferKB": 366,
     "byType": {
@@ -33,11 +33,11 @@
   },
   {
     "url": "/work.html",
-    "lcp": 1060,
+    "lcp": 1080,
     "cls": 0,
-    "fcp": 1036,
-    "domContentLoaded": 1047,
-    "load": 1050,
+    "fcp": 1072,
+    "domContentLoaded": 1068,
+    "load": 1069,
     "requests": 8,
     "transferKB": 489,
     "byType": {
@@ -49,11 +49,11 @@
   },
   {
     "url": "/order-policy.html",
-    "lcp": 824,
+    "lcp": 884,
     "cls": 0,
-    "fcp": 824,
-    "domContentLoaded": 815,
-    "load": 816,
+    "fcp": 884,
+    "domContentLoaded": 876,
+    "load": 877,
     "requests": 4,
     "transferKB": 73,
     "byType": {
