@@ -150,7 +150,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     rec('lightbox', 'open', opened.open ? 'pass' : 'fail', `open=${opened.open}, title="${opened.title}", ${opened.count}`);
     rec('lightbox', 'focus-moves-in', /lightbox__close/.test(opened.focus) ? 'pass' : 'fail', `focus on .${opened.focus}`);
     rec('lightbox', 'background-scroll-locked', opened.bodyFixed === 'fixed' ? 'pass' : 'fail', `body position ${opened.bodyFixed}`);
-    rec('lightbox', 'enquiry-context', /wa\.me\/919556703560/.test(opened.enquiry) && decodeURIComponent(opened.enquiry).includes('keepsake box') ? 'pass' : 'fail', decodeURIComponent(opened.enquiry).slice(0, 120));
+    rec('lightbox', 'enquiry-context', /wa\.me\/919040632014/.test(opened.enquiry) && decodeURIComponent(opened.enquiry).includes('keepsake box') ? 'pass' : 'fail', decodeURIComponent(opened.enquiry).slice(0, 120));
     rec('lightbox', 'full-image-fallback', /-1200\.jpg$/.test(opened.full) ? 'pass' : 'fail', opened.full);
 
     /* image actually decodes */
@@ -566,8 +566,8 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     rec('external', 'handoff-inventory', 'pass', Object.entries(hosts).map(([h, n]) => `${h} x${n}`).join(', '));
 
     const waLinks = links.filter((l) => l.href.includes('wa.me'));
-    const wrongNumber = waLinks.filter((l) => !l.href.includes('/919556703560'));
-    rec('external', 'whatsapp-number-consistent', wrongNumber.length === 0 ? 'pass' : 'fail', wrongNumber.length ? wrongNumber.map((l) => l.href).join(' | ') : `${waLinks.length} WhatsApp links, all to +91 95567 03560`);
+    const wrongNumber = waLinks.filter((l) => !l.href.includes('/919040632014'));
+    rec('external', 'whatsapp-number-consistent', wrongNumber.length === 0 ? 'pass' : 'fail', wrongNumber.length ? wrongNumber.map((l) => l.href).join(' | ') : `${waLinks.length} WhatsApp links, all to +91 90406 32014`);
 
     const prefill = waLinks[0] ? decodeURIComponent(new URL(waLinks[0].href).searchParams.get('text') || '') : '';
     rec('external', 'whatsapp-prefill-not-autosend', prefill && !/\bsend\b/i.test(new URL(waLinks[0].href).search.replace('text=', '')) ? 'pass' : 'fail', `wa.me text parameter only; message opens unsent: "${prefill.split('\n')[0]}"`);

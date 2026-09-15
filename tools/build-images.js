@@ -251,12 +251,17 @@ async function run() {
         .png({ compressionLevel: 9, palette: true, quality: 90 })
         .toFile(path.join(OUT_BRAND, `logo-${size}.png`));
     }
-    for (const size of [16, 32, 48]) {
-      await sharp(logo)
+    const faviconSrc = fs.existsSync(path.join(SRC, 'favicon-base.png')) ? path.join(SRC, 'favicon-base.png') : logo;
+    for (const size of [16, 32, 48, 180]) {
+      await sharp(faviconSrc)
         .resize(size, size, { kernel: 'lanczos3' })
         .png({ compressionLevel: 9, palette: true, quality: 92 })
         .toFile(path.join(OUT_BRAND, `favicon-${size}.png`));
     }
+    // Also generate a favicon.ico at root for better compatibility
+    await sharp(faviconSrc)
+      .resize(32, 32, { kernel: 'lanczos3' })
+      .toFile('favicon.ico');
     manifest.push({
       kind: 'brand',
       slug: 'logo',
