@@ -1,66 +1,66 @@
 [
   {
     "url": "/",
-    "lcp": 1180,
+    "lcp": 1264,
     "cls": 0,
-    "fcp": 1180,
-    "domContentLoaded": 1150,
-    "load": 1154,
+    "fcp": 1264,
+    "domContentLoaded": 1279,
+    "load": 1281,
     "requests": 7,
-    "transferKB": 217,
+    "transferKB": 220,
     "byType": {
-      "image/png": "7KB",
+      "image/png": "8KB",
       "text/html": "46KB",
       "image/webp": "134KB",
-      "text/css": "31KB"
+      "text/css": "33KB"
     }
   },
   {
     "url": "/services.html",
-    "lcp": 2036,
+    "lcp": 2040,
     "cls": 0,
-    "fcp": 1088,
-    "domContentLoaded": 1044,
-    "load": 2026,
+    "fcp": 1156,
+    "domContentLoaded": 1121,
+    "load": 2036,
     "requests": 7,
-    "transferKB": 366,
+    "transferKB": 369,
     "byType": {
-      "text/html": "27KB",
-      "image/png": "5KB",
+      "text/html": "28KB",
+      "image/png": "6KB",
       "image/webp": "303KB",
-      "text/css": "31KB"
+      "text/css": "33KB"
     }
   },
   {
     "url": "/work.html",
-    "lcp": 1080,
+    "lcp": 1132,
     "cls": 0,
-    "fcp": 1072,
-    "domContentLoaded": 1068,
-    "load": 1069,
+    "fcp": 1104,
+    "domContentLoaded": 1119,
+    "load": 1122,
     "requests": 8,
-    "transferKB": 489,
+    "transferKB": 492,
     "byType": {
       "text/html": "41KB",
-      "image/png": "5KB",
+      "image/png": "6KB",
       "image/webp": "412KB",
-      "text/css": "31KB"
+      "text/css": "33KB"
     }
   },
   {
     "url": "/order-policy.html",
-    "lcp": 884,
+    "lcp": 832,
     "cls": 0,
-    "fcp": 884,
-    "domContentLoaded": 876,
-    "load": 877,
+    "fcp": 832,
+    "domContentLoaded": 830,
+    "load": 831,
     "requests": 4,
-    "transferKB": 73,
+    "transferKB": 76,
     "byType": {
-      "text/html": "20KB",
-      "image/png": "5KB",
+      "text/html": "21KB",
+      "image/png": "6KB",
       "image/webp": "17KB",
-      "text/css": "31KB"
+      "text/css": "33KB"
     }
   }
 ]

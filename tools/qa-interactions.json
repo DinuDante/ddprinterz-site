@@ -33,7 +33,7 @@
     "area": "anchors",
     "check": "contact-cross-page",
     "status": "pass",
-    "detail": "scrollY 6569, target top 245, header 67"
+    "detail": "scrollY 6570, target top 244, header 67"
   },
   {
     "area": "lightbox",
@@ -56,7 +56,7 @@
   {
     "area": "lightbox",
     "check": "enquiry-context",
-    "status": "fail",
+    "status": "pass",
     "detail": "https://wa.me/919040632014?text=Hi DinuDante, I'd like a custom 3D print from DDPrinterZ.\n\nItem: a keepsake box like the"
   },
   {
@@ -350,8 +350,8 @@
   {
     "area": "external",
     "check": "whatsapp-number-consistent",
-    "status": "fail",
-    "detail": "https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20personalised%20gift%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20functional%20part%20or%20prototype%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20model%20or%20d%C3%A9cor%20piece%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20(tell%20me%20what%20you%20would%20like%20printed)%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20(tell%20me%20what%20you%20would%20like%20printed)%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20(tell%20me%20what%20you%20would%20like%20printed)%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A | https://wa.me/919040632014?text=Hi%20DinuDante%2C%20I%27d%20like%20a%20custom%203D%20print%20from%20DDPrinterZ.%0A%0AItem%3A%20a%20custom%20print%0AReference%20photo%20%2F%20file%3A%0AApproximate%20size%3A%0AQuantity%3A%0AColours%3A%0ANeeded%20by%3A"
+    "status": "pass",
+    "detail": "7 WhatsApp links, all to +91 90406 32014"
   },
   {
     "area": "external",
