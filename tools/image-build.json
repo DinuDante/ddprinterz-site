@@ -1,0 +1,236 @@
+{
+  "generated": "2026-09-15T16:29:52.709Z",
+  "manifest": [
+    {
+      "kind": "gallery",
+      "slug": "anime-logo-panel",
+      "source": "wedding-tokens.jpg",
+      "files": [
+        "assets\\gallery\\anime-logo-panel-480.webp",
+        "assets\\gallery\\anime-logo-panel-480.jpg",
+        "assets\\gallery\\anime-logo-panel-800.webp",
+        "assets\\gallery\\anime-logo-panel-800.jpg",
+        "assets\\gallery\\anime-logo-panel-1200.webp",
+        "assets\\gallery\\anime-logo-panel-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "anime-figure-panel",
+      "source": "anime-wall-art.jpg",
+      "files": [
+        "assets\\gallery\\anime-figure-panel-480.webp",
+        "assets\\gallery\\anime-figure-panel-480.jpg",
+        "assets\\gallery\\anime-figure-panel-800.webp",
+        "assets\\gallery\\anime-figure-panel-800.jpg",
+        "assets\\gallery\\anime-figure-panel-1200.webp",
+        "assets\\gallery\\anime-figure-panel-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "dragon-figure",
+      "source": "dragon-figure.jpg",
+      "files": [
+        "assets\\gallery\\dragon-figure-480.webp",
+        "assets\\gallery\\dragon-figure-480.jpg",
+        "assets\\gallery\\dragon-figure-800.webp",
+        "assets\\gallery\\dragon-figure-800.jpg",
+        "assets\\gallery\\dragon-figure-1200.webp",
+        "assets\\gallery\\dragon-figure-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "dance-figurine",
+      "source": "dance-figurine.jpg",
+      "files": [
+        "assets\\gallery\\dance-figurine-480.webp",
+        "assets\\gallery\\dance-figurine-480.jpg",
+        "assets\\gallery\\dance-figurine-800.webp",
+        "assets\\gallery\\dance-figurine-800.jpg",
+        "assets\\gallery\\dance-figurine-1200.webp",
+        "assets\\gallery\\dance-figurine-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "sakura-bookmark",
+      "source": "sakura-bookmark.jpg",
+      "files": [
+        "assets\\gallery\\sakura-bookmark-480.webp",
+        "assets\\gallery\\sakura-bookmark-480.jpg",
+        "assets\\gallery\\sakura-bookmark-800.webp",
+        "assets\\gallery\\sakura-bookmark-800.jpg",
+        "assets\\gallery\\sakura-bookmark-1200.webp",
+        "assets\\gallery\\sakura-bookmark-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "blossom-jewellery-box",
+      "source": "blossom-jewellery-box.jpg",
+      "files": [
+        "assets\\gallery\\blossom-jewellery-box-480.webp",
+        "assets\\gallery\\blossom-jewellery-box-480.jpg",
+        "assets\\gallery\\blossom-jewellery-box-800.webp",
+        "assets\\gallery\\blossom-jewellery-box-800.jpg",
+        "assets\\gallery\\blossom-jewellery-box-1200.webp",
+        "assets\\gallery\\blossom-jewellery-box-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "car-model",
+      "source": "car-model.jpg",
+      "files": [
+        "assets\\gallery\\car-model-480.webp",
+        "assets\\gallery\\car-model-480.jpg",
+        "assets\\gallery\\car-model-800.webp",
+        "assets\\gallery\\car-model-800.jpg",
+        "assets\\gallery\\car-model-1200.webp",
+        "assets\\gallery\\car-model-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "name-keychains",
+      "source": "charging-dock.jpg",
+      "files": [
+        "assets\\gallery\\name-keychains-480.webp",
+        "assets\\gallery\\name-keychains-480.jpg",
+        "assets\\gallery\\name-keychains-800.webp",
+        "assets\\gallery\\name-keychains-800.jpg",
+        "assets\\gallery\\name-keychains-1200.webp",
+        "assets\\gallery\\name-keychains-1200.jpg"
+      ]
+    },
+    {
+      "kind": "gallery",
+      "slug": "phone-stand",
+      "source": "phone-stand.jpg",
+      "files": [
+        "assets\\gallery\\phone-stand-480.webp",
+        "assets\\gallery\\phone-stand-480.jpg",
+        "assets\\gallery\\phone-stand-800.webp",
+        "assets\\gallery\\phone-stand-800.jpg",
+        "assets\\gallery\\phone-stand-1200.webp",
+        "assets\\gallery\\phone-stand-1200.jpg"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "service-personalised",
+      "source": "charging-dock.jpg",
+      "files": [
+        "assets\\services\\service-personalised-400.webp",
+        "assets\\services\\service-personalised-400.jpg",
+        "assets\\services\\service-personalised-800.webp",
+        "assets\\services\\service-personalised-800.jpg"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "service-functional",
+      "source": "phone-stand.jpg",
+      "files": [
+        "assets\\services\\service-functional-400.webp",
+        "assets\\services\\service-functional-400.jpg",
+        "assets\\services\\service-functional-800.webp",
+        "assets\\services\\service-functional-800.jpg"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "service-decor",
+      "source": "dance-figurine.jpg",
+      "files": [
+        "assets\\services\\service-decor-400.webp",
+        "assets\\services\\service-decor-400.jpg",
+        "assets\\services\\service-decor-800.webp",
+        "assets\\services\\service-decor-800.jpg"
+      ]
+    },
+    {
+      "kind": "hero",
+      "slug": "hero-print",
+      "source": "phone-stand.jpg",
+      "files": [
+        "assets\\hero\\hero-print-640.webp",
+        "assets\\hero\\hero-print-640.jpg",
+        "assets\\hero\\hero-print-900.webp",
+        "assets\\hero\\hero-print-900.jpg",
+        "assets\\hero\\hero-print-1280.webp",
+        "assets\\hero\\hero-print-1280.jpg"
+      ]
+    },
+    {
+      "kind": "hero",
+      "slug": "hero-print-wide",
+      "source": "phone-stand.jpg",
+      "files": [
+        "assets\\hero\\hero-print-wide-480.webp",
+        "assets\\hero\\hero-print-wide-480.jpg",
+        "assets\\hero\\hero-print-wide-760.webp",
+        "assets\\hero\\hero-print-wide-760.jpg",
+        "assets\\hero\\hero-print-wide-1100.webp",
+        "assets\\hero\\hero-print-wide-1100.jpg"
+      ]
+    },
+    {
+      "kind": "poster",
+      "slug": "video-blossom-box",
+      "source": "youtube:GrVqXOJHH-E",
+      "files": [
+        "assets\\video\\video-blossom-box-360.webp",
+        "assets\\video\\video-blossom-box-360.jpg",
+        "assets\\video\\video-blossom-box-720.webp",
+        "assets\\video\\video-blossom-box-720.jpg"
+      ]
+    },
+    {
+      "kind": "poster",
+      "slug": "video-process",
+      "source": "youtube:qJx8QoXDi78",
+      "files": [
+        "assets\\video\\video-process-360.webp",
+        "assets\\video\\video-process-360.jpg",
+        "assets\\video\\video-process-720.webp",
+        "assets\\video\\video-process-720.jpg"
+      ]
+    },
+    {
+      "kind": "poster",
+      "slug": "video-mom-topper",
+      "source": "youtube:GqWD6Tv1fzw",
+      "files": [
+        "assets\\video\\video-mom-topper-360.webp",
+        "assets\\video\\video-mom-topper-360.jpg",
+        "assets\\video\\video-mom-topper-720.webp",
+        "assets\\video\\video-mom-topper-720.jpg"
+      ]
+    },
+    {
+      "kind": "brand",
+      "slug": "logo",
+      "source": "logo.png",
+      "files": [
+        "assets\\brand\\logo-40.png",
+        "assets\\brand\\logo-80.png",
+        "assets\\brand\\logo-120.png",
+        "assets\\brand\\logo-180.png",
+        "assets\\brand\\favicon-16.png",
+        "assets\\brand\\favicon-32.png",
+        "assets\\brand\\favicon-48.png"
+      ]
+    },
+    {
+      "kind": "social",
+      "slug": "og-default",
+      "source": "phone-stand.jpg",
+      "files": [
+        "assets/social/og-default.jpg"
+      ]
+    }
+  ]
+}

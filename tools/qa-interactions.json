@@ -1,0 +1,416 @@
+[
+  {
+    "area": "watch",
+    "check": "direct-load",
+    "status": "pass",
+    "detail": "scrolled to 1998px, target 90px below viewport top, clear of the 67px header"
+  },
+  {
+    "area": "watch",
+    "check": "same-page-click",
+    "status": "pass",
+    "detail": "scrollY 0 -> 1995, target top 93, header 67, hash #watch"
+  },
+  {
+    "area": "watch",
+    "check": "cross-page-click",
+    "status": "pass",
+    "detail": "/work.html#watch, scrollY 1998, target top 90, header 67"
+  },
+  {
+    "area": "anchors",
+    "check": "pricing-cross-page",
+    "status": "pass",
+    "detail": "scrollY 2816, target top 90, header 67"
+  },
+  {
+    "area": "anchors",
+    "check": "order-cross-page",
+    "status": "pass",
+    "detail": "scrollY 3819, target top 90, header 67"
+  },
+  {
+    "area": "anchors",
+    "check": "contact-cross-page",
+    "status": "pass",
+    "detail": "scrollY 6552, target top 262, header 67"
+  },
+  {
+    "area": "lightbox",
+    "check": "open",
+    "status": "pass",
+    "detail": "open=true, title=\"Bow-trimmed keepsake box\", 3 of 9"
+  },
+  {
+    "area": "lightbox",
+    "check": "focus-moves-in",
+    "status": "pass",
+    "detail": "focus on .lightbox__close"
+  },
+  {
+    "area": "lightbox",
+    "check": "background-scroll-locked",
+    "status": "pass",
+    "detail": "body position fixed"
+  },
+  {
+    "area": "lightbox",
+    "check": "enquiry-context",
+    "status": "pass",
+    "detail": "https://wa.me/919556703560?text=Hi DinuDante, I'd like a custom 3D print from DDPrinterZ.\n\nItem: a keepsake box like the"
+  },
+  {
+    "area": "lightbox",
+    "check": "full-image-fallback",
+    "status": "pass",
+    "detail": "http://localhost:4173/assets/gallery/blossom-jewellery-box-1200.jpg"
+  },
+  {
+    "area": "lightbox",
+    "check": "image-loads",
+    "status": "pass",
+    "detail": "natural 1200x1500"
+  },
+  {
+    "area": "lightbox",
+    "check": "next-button",
+    "status": "pass",
+    "detail": "after next: 4 of 9"
+  },
+  {
+    "area": "lightbox",
+    "check": "prev-button",
+    "status": "pass",
+    "detail": "after prev: 3 of 9"
+  },
+  {
+    "area": "lightbox",
+    "check": "keyboard-arrows",
+    "status": "pass",
+    "detail": "right -> 4 of 9, left -> 3 of 9"
+  },
+  {
+    "area": "lightbox",
+    "check": "wraps-at-end",
+    "status": "pass",
+    "detail": "after 7 more next presses: 1 of 9"
+  },
+  {
+    "area": "lightbox",
+    "check": "escape-closes",
+    "status": "pass",
+    "detail": "open=false"
+  },
+  {
+    "area": "lightbox",
+    "check": "scroll-restored",
+    "status": "pass",
+    "detail": "900 -> 900"
+  },
+  {
+    "area": "lightbox",
+    "check": "body-unlocked",
+    "status": "pass",
+    "detail": "body position static"
+  },
+  {
+    "area": "lightbox",
+    "check": "focus-returns-to-trigger",
+    "status": "pass",
+    "detail": "focus on .tile"
+  },
+  {
+    "area": "lightbox",
+    "check": "opens-with-enter-key",
+    "status": "pass",
+    "detail": "open=true"
+  },
+  {
+    "area": "lightbox",
+    "check": "close-button",
+    "status": "pass",
+    "detail": "dialog closed"
+  },
+  {
+    "area": "lightbox",
+    "check": "backdrop-click-closes",
+    "status": "pass",
+    "detail": "dialog closed"
+  },
+  {
+    "area": "lightbox",
+    "check": "touch-swipe",
+    "status": "pass",
+    "detail": "after left swipe: 2 of 9"
+  },
+  {
+    "area": "lightbox-home",
+    "check": "viewer-present",
+    "status": "pass",
+    "detail": "4 tiles, dialog true"
+  },
+  {
+    "area": "lightbox-home",
+    "check": "opens-in-page",
+    "status": "pass",
+    "detail": "open=true, 1 of 4"
+  },
+  {
+    "area": "lightbox-home",
+    "check": "does-not-navigate-away",
+    "status": "pass",
+    "detail": "pathname /"
+  },
+  {
+    "area": "lightbox-home",
+    "check": "count-matches-sample",
+    "status": "pass",
+    "detail": "count 1 of 4"
+  },
+  {
+    "area": "lightbox-home",
+    "check": "escape-closes",
+    "status": "pass",
+    "detail": "dialog closed"
+  },
+  {
+    "area": "menu",
+    "check": "button-visible-on-mobile",
+    "status": "pass",
+    "detail": "menu button display true"
+  },
+  {
+    "area": "menu",
+    "check": "closed-by-default",
+    "status": "pass",
+    "detail": "links visible false, aria-expanded false"
+  },
+  {
+    "area": "menu",
+    "check": "opens",
+    "status": "pass",
+    "detail": "visible true, aria-expanded true"
+  },
+  {
+    "area": "menu",
+    "check": "escape-closes",
+    "status": "pass",
+    "detail": "visible false, aria-expanded false"
+  },
+  {
+    "area": "menu",
+    "check": "escape-restores-focus",
+    "status": "pass",
+    "detail": "focus on .menu-btn"
+  },
+  {
+    "area": "menu",
+    "check": "closes-on-link-choice",
+    "status": "pass",
+    "detail": "aria-expanded returned to false"
+  },
+  {
+    "area": "menu",
+    "check": "resets-on-resize",
+    "status": "pass",
+    "detail": "is-open false, aria-expanded false, links visible true"
+  },
+  {
+    "area": "theme",
+    "check": "toggle-changes-theme",
+    "status": "pass",
+    "detail": "night -> day, body rgb(251, 251, 249)"
+  },
+  {
+    "area": "theme",
+    "check": "toggle-state-accurate",
+    "status": "pass",
+    "detail": "aria-pressed false -> true; label \"Switch to dark theme\""
+  },
+  {
+    "area": "theme",
+    "check": "theme-color-meta-updates",
+    "status": "pass",
+    "detail": "#0f1311 -> #fbfbf9"
+  },
+  {
+    "area": "theme",
+    "check": "persists-across-pages",
+    "status": "pass",
+    "detail": "day kept on work.html: day"
+  },
+  {
+    "area": "theme",
+    "check": "invalid-stored-value-handled",
+    "status": "pass",
+    "detail": "stored \"banana\" -> resolved \"night\""
+  },
+  {
+    "area": "theme",
+    "check": "storage-unavailable",
+    "status": "pass",
+    "detail": "toggle still works, theme \"day\", no page errors"
+  },
+  {
+    "area": "video",
+    "check": "no-third-party-request-before-play",
+    "status": "pass",
+    "detail": "zero YouTube/Google requests on load"
+  },
+  {
+    "area": "video",
+    "check": "posters-load",
+    "status": "pass",
+    "detail": "330x586, 330x586, 330x586"
+  },
+  {
+    "area": "video",
+    "check": "stable-player-box",
+    "status": "pass",
+    "detail": "375x667, ratio 0.563 (9:16 = 0.5625)"
+  },
+  {
+    "area": "video",
+    "check": "play-creates-player",
+    "status": "pass",
+    "detail": "https://www.youtube-nocookie.com/embed/GrVqXOJHH-E?autoplay=1&rel=0&playsinline=1 (375x667) title=\"Stackable blossom jewellery box\""
+  },
+  {
+    "area": "video",
+    "check": "privacy-enhanced-embed",
+    "status": "pass",
+    "detail": "https://www.youtube-nocookie.com/embed/GrVqXOJHH-E"
+  },
+  {
+    "area": "video",
+    "check": "fallback-links",
+    "status": "pass",
+    "detail": "https://www.youtube.com/watch?v=GrVqXOJHH-E | https://www.youtube.com/watch?v=qJx8QoXDi78 | https://www.youtube.com/watch?v=GqWD6Tv1fzw"
+  },
+  {
+    "area": "touch-targets",
+    "check": "home-390",
+    "status": "pass",
+    "detail": "all primary controls at least 44px tall"
+  },
+  {
+    "area": "touch-targets",
+    "check": "work-390",
+    "status": "pass",
+    "detail": "all primary controls at least 44px tall"
+  },
+  {
+    "area": "touch-targets",
+    "check": "services-390",
+    "status": "pass",
+    "detail": "all primary controls at least 44px tall"
+  },
+  {
+    "area": "keyboard",
+    "check": "skip-link-first",
+    "status": "pass",
+    "detail": "first tab stop: \"Skip to content\""
+  },
+  {
+    "area": "keyboard",
+    "check": "tab-order-sane",
+    "status": "pass",
+    "detail": "Skip to content > DDPrinterZ > Services > Our work > Watch > Pricing > How to order > Contact > theme-toggle > Send your idea > See real prints > Honeycomb phone stan"
+  },
+  {
+    "area": "keyboard",
+    "check": "focus-style-declared",
+    "status": "pass",
+    "detail": "focus-visible rule present in stylesheet; computed outline solid 3px"
+  },
+  {
+    "area": "keyboard",
+    "check": "faq-native-disclosure",
+    "status": "pass",
+    "detail": "details/summary opens without script"
+  },
+  {
+    "area": "no-js",
+    "check": "content-and-navigation-present",
+    "status": "pass",
+    "detail": "9 gallery links and main navigation render without script"
+  },
+  {
+    "area": "no-js",
+    "check": "gallery-falls-back-to-image-links",
+    "status": "pass",
+    "detail": "each tile is a plain link to the full image"
+  },
+  {
+    "area": "external",
+    "check": "handoff-inventory",
+    "status": "pass",
+    "detail": "ig.me x3, wa.me x7, dinudante.in x2, mailto x2, www.youtube.com x2, www.instagram.com x1"
+  },
+  {
+    "area": "external",
+    "check": "whatsapp-number-consistent",
+    "status": "pass",
+    "detail": "7 WhatsApp links, all to +91 95567 03560"
+  },
+  {
+    "area": "external",
+    "check": "whatsapp-prefill-not-autosend",
+    "status": "pass",
+    "detail": "wa.me text parameter only; message opens unsent: \"Hi DinuDante, I'd like a custom 3D print from DDPrinterZ.\""
+  },
+  {
+    "area": "external",
+    "check": "target-blank-safety",
+    "status": "pass",
+    "detail": "every new-tab link carries rel=noopener noreferrer"
+  },
+  {
+    "area": "zoom-200",
+    "check": "/",
+    "status": "pass",
+    "detail": "scrollWidth 640 vs clientWidth 640"
+  },
+  {
+    "area": "zoom-200",
+    "check": "/work.html",
+    "status": "pass",
+    "detail": "scrollWidth 640 vs clientWidth 640"
+  },
+  {
+    "area": "zoom-200",
+    "check": "/services.html",
+    "status": "pass",
+    "detail": "scrollWidth 640 vs clientWidth 640"
+  },
+  {
+    "area": "zoom-200",
+    "check": "/order-policy.html",
+    "status": "pass",
+    "detail": "scrollWidth 640 vs clientWidth 640"
+  },
+  {
+    "area": "reduced-motion",
+    "check": "honoured",
+    "status": "pass",
+    "detail": "scroll-behavior auto, tile transition 1e-06s"
+  },
+  {
+    "area": "reduced-motion",
+    "check": "watch-anchor-still-works",
+    "status": "pass",
+    "detail": "scrollY 1997, target top 91"
+  },
+  {
+    "area": "navigation",
+    "check": "active-state/services.html",
+    "status": "pass",
+    "detail": "aria-current=\"page\" on \"Services\""
+  },
+  {
+    "area": "navigation",
+    "check": "active-state/work.html",
+    "status": "pass",
+    "detail": "aria-current=\"page\" on \"Our work\""
+  }
+]

@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+
+# QA screenshots: ~35MB of regenerable evidence. Recreate with `npm run qa`.
+# The machine-readable results in tools/qa-*.json are committed instead.
+qa-shots/

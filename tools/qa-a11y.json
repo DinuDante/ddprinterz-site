@@ -1,0 +1,134 @@
+[
+  {
+    "url": "/",
+    "theme": "night",
+    "passes": 42,
+    "incomplete": 1,
+    "incompleteDetail": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          ".hero__caption",
+          ".card:nth-child(1) > .card__media > .card__tag",
+          ".card:nth-child(2) > .card__media > .card__tag"
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "url": "/services.html",
+    "theme": "night",
+    "passes": 38,
+    "incomplete": 1,
+    "incompleteDetail": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          "#personalised > .card__media > .card__tag",
+          "#functional > .card__media > .card__tag",
+          "#decor > .card__media > .card__tag"
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "url": "/work.html",
+    "theme": "night",
+    "passes": 38,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/privacy.html",
+    "theme": "night",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/order-policy.html",
+    "theme": "night",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/404.html",
+    "theme": "night",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/",
+    "theme": "day",
+    "passes": 42,
+    "incomplete": 1,
+    "incompleteDetail": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          ".hero__caption",
+          ".card:nth-child(1) > .card__media > .card__tag",
+          ".card:nth-child(2) > .card__media > .card__tag"
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "url": "/services.html",
+    "theme": "day",
+    "passes": 38,
+    "incomplete": 1,
+    "incompleteDetail": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          "#personalised > .card__media > .card__tag",
+          "#functional > .card__media > .card__tag",
+          "#decor > .card__media > .card__tag"
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "url": "/work.html",
+    "theme": "day",
+    "passes": 38,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/privacy.html",
+    "theme": "day",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/order-policy.html",
+    "theme": "day",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  },
+  {
+    "url": "/404.html",
+    "theme": "day",
+    "passes": 36,
+    "incomplete": 0,
+    "incompleteDetail": [],
+    "violations": []
+  }
+]

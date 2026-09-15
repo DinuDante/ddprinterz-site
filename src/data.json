@@ -1,155 +1,281 @@
 {
-    "site":  {
-                 "name":  "DDPrinterZ",
-                 "founder":  "DinuDante",
-                 "location":  "Bhubaneswar, Odisha",
-                 "url":  "https://dinudante.com/",
-                 "email":  "dineshdante.ds@gmail.com",
-                 "instagram":  "https://www.instagram.com/ddprinterz/",
-                 "youtube":  "https://www.youtube.com/@DDPrinterZ",
-                 "whatsapp_url":  "https://wa.me/919556703560"
-             },
-    "pricing":  [
-                    {
-                        "name":  "Custom keychain",
-                        "desc":  "Your name or logo, multicolour",
-                        "price":  "₹149+"
-                    },
-                    {
-                        "name":  "Nameplate",
-                        "desc":  "Desk or door, multicolour",
-                        "price":  "₹399+"
-                    },
-                    {
-                        "name":  "Lithophane lamp",
-                        "desc":  "Your photograph transformed into light",
-                        "price":  "₹599+"
-                    },
-                    {
-                        "name":  "Custom PLA print",
-                        "desc":  "Your design or STL file",
-                        "price":  "₹4/g"
-                    },
-                    {
-                        "name":  "Custom PETG print",
-                        "desc":  "Stronger, functional parts",
-                        "price":  "₹5/g"
-                    },
-                    {
-                        "name":  "Prototyping",
-                        "desc":  "Design help for students and businesses",
-                        "price":  "Quote"
-                    }
-                ],
-    "projects":  [
-                     {
-                         "title":  "Anime wall art",
-                         "desc":  "Layered · Multicolour",
-                         "img":  "assets/gallery/wedding-tokens.jpg",
-                         "img_thumb":  "assets/gallery/wedding-tokens-640.jpg"
-                     },
-                     {
-                         "title":  "Articulated dragon",
-                         "desc":  "Character figure · Moving parts",
-                         "img":  "assets/gallery/dragon-figure.jpg",
-                         "img_thumb":  "assets/gallery/dragon-figure-640.jpg"
-                     },
-                     {
-                         "title":  "Wedding keepsakes",
-                         "desc":  "Names · Dates · Your colours",
-                         "img":  "assets/gallery/anime-wall-art.jpg",
-                         "img_thumb":  "assets/gallery/anime-wall-art-640.jpg"
-                     },
-                     {
-                         "title":  "Dance figurine",
-                         "desc":  "Culture · Fine detail",
-                         "img":  "assets/gallery/dance-figurine.jpg",
-                         "img_thumb":  "assets/gallery/dance-figurine-640.jpg"
-                     },
-                     {
-                         "title":  "Sakura bookmark",
-                         "desc":  "Three-colour detail",
-                         "img":  "assets/gallery/sakura-bookmark.jpg",
-                         "img_thumb":  "assets/gallery/sakura-bookmark-640.jpg"
-                     },
-                     {
-                         "title":  "Blossom jewellery box",
-                         "desc":  "Decorative · Functional",
-                         "img":  "assets/gallery/blossom-jewellery-box.jpg",
-                         "img_thumb":  "assets/gallery/blossom-jewellery-box-640.jpg"
-                     },
-                     {
-                         "title":  "Detailed car model",
-                         "desc":  "Mechanical detail · Miniature",
-                         "img":  "assets/gallery/car-model.jpg",
-                         "img_thumb":  "assets/gallery/car-model-640.jpg"
-                     },
-                     {
-                         "title":  "Custom name pieces",
-                         "desc":  "Personalised typography",
-                         "img":  "assets/gallery/charging-dock.jpg",
-                         "img_thumb":  "assets/gallery/charging-dock-640.jpg"
-                     },
-                     {
-                         "title":  "Desk phone stand",
-                         "desc":  "Strong · Lightweight",
-                         "img":  "assets/gallery/phone-stand.jpg",
-                         "img_thumb":  "assets/gallery/phone-stand-640.jpg"
-                     }
-                 ],
-    "videos":  [
-                   {
-                       "id":  "GrVqXOJHH-E",
-                       "title":  "Stackable blossom jewellery box",
-                       "tag":  "PROJECT 01"
-                   },
-                   {
-                       "id":  "qJx8QoXDi78",
-                       "title":  "From filament to finished product",
-                       "tag":  "PROCESS"
-                   },
-                   {
-                       "id":  "GqWD6Tv1fzw",
-                       "title":  "A personalised birthday gift for Mom",
-                       "tag":  "PROJECT 02"
-                   }
-               ],
-    "faq":  [
-                {
-                    "q":  "How much does a custom 3D print cost?",
-                    "a":  "Pricing depends on the size, material, and print time. Simple items like keychains start at ₹149, while custom prints are priced by weight (e.g., ₹4/g for PLA). We provide a clear quote before starting any work."
-                },
-                {
-                    "q":  "What information should I send?",
-                    "a":  "Send us a photo, a rough sketch, or an STL file if you have one. Include approximate dimensions, your preferred colours, and whether the item needs to be strong (functional) or just decorative."
-                },
-                {
-                    "q":  "Do I need an STL file?",
-                    "a":  "No, you don\u0027t need a 3D model. If you just have an idea, sketch, or reference photo, we can discuss the design. If it requires extensive 3D modelling, we\u0027ll include a design charge in your quote."
-                },
-                {
-                    "q":  "Which materials do you use?",
-                    "a":  "We primarily print in PLA for colourful, detailed gifts and indoor décor, and PETG for stronger, more durable functional parts that can handle light heat and stress."
-                },
-                {
-                    "q":  "Can you print multiple colours?",
-                    "a":  "Yes. We use Bambu Lab printers with AMS capability, allowing us to print true multicolour objects directly, without painting."
-                },
-                {
-                    "q":  "How long does printing take?",
-                    "a":  "Most typical orders are completed within 2 to 5 days, depending on our current queue and the print\u0027s complexity. We will confirm the timeline with your quote."
-                },
-                {
-                    "q":  "Do you deliver in Bhubaneswar?",
-                    "a":  "Yes, we offer local pickup and delivery within Bhubaneswar."
-                },
-                {
-                    "q":  "Do you ship outside Odisha?",
-                    "a":  "Yes, we offer India-wide shipping at cost."
-                },
-                {
-                    "q":  "How are custom-order payments handled?",
-                    "a":  "Since every piece is custom-made, we require a small advance payment to start the print, with the balance due upon completion/delivery."
-                }
-            ]
+  "site": {
+    "name": "DDPrinterZ",
+    "maker": "DinuDante",
+    "location": "Bhubaneswar, Odisha",
+    "url": "https://dinudante.com/",
+    "email": "dineshdante.ds@gmail.com",
+    "instagram": "https://www.instagram.com/ddprinterz/",
+    "instagramDm": "https://ig.me/m/ddprinterz",
+    "instagramHandle": "@ddprinterz",
+    "youtube": "https://www.youtube.com/@DDPrinterZ",
+    "youtubeHandle": "@DDPrinterZ",
+    "whatsappNumber": "919556703560",
+    "whatsappDisplay": "+91 95567 03560",
+    "portfolio": "https://dinudante.in",
+    "minimumOrder": "₹400"
+  },
+
+  "services": [
+    {
+      "slug": "personalised",
+      "tag": "Personalised",
+      "title": "Personalised gifts",
+      "blurb": "Names, dates and logos printed straight into the object in two colours — no stickers, no paint.",
+      "examples": [
+        "Name keyrings and bag tags",
+        "Desk and door nameplates",
+        "Cake toppers and celebration pieces"
+      ],
+      "image": "assets/services/service-personalised",
+      "alt": "Two DinuDante script name keyrings printed in green with a white outline, resting on a print bed",
+      "imageCaption": "Real DDPrinterZ print: two-colour script name keyrings",
+      "enquiry": "personalised gift"
+    },
+    {
+      "slug": "functional",
+      "tag": "Functional",
+      "title": "Functional parts & prototypes",
+      "blurb": "Stands, holders, enclosures, fixtures and student project parts printed in PLA or the tougher PETG.",
+      "examples": [
+        "Desk and device stands",
+        "Replacement and fixture parts",
+        "College and startup prototypes"
+      ],
+      "image": "assets/services/service-functional",
+      "alt": "Orange and white honeycomb desk phone stand printed by DDPrinterZ, standing on a desk",
+      "imageCaption": "Real DDPrinterZ print: honeycomb phone stand in two colours",
+      "enquiry": "functional part or prototype"
+    },
+    {
+      "slug": "decor",
+      "tag": "Models & décor",
+      "title": "Models & décor",
+      "blurb": "Figurines, wall pieces, boxes and detail models where surface finish and fine detail matter most.",
+      "examples": [
+        "Figurines and character models",
+        "Layered wall panels and bookmarks",
+        "Boxes, planters and organisers"
+      ],
+      "image": "assets/services/service-decor",
+      "alt": "White classical Indian dance figurine printed by DDPrinterZ, showing fine jewellery and drapery detail",
+      "imageCaption": "Real DDPrinterZ print: classical dance figurine",
+      "enquiry": "model or décor piece"
+    }
+  ],
+
+  "pricing": [
+    {
+      "name": "Name keyring",
+      "desc": "Your name or logo, two colours",
+      "price": "₹149+",
+      "belowMinimum": true
+    },
+    {
+      "name": "Nameplate",
+      "desc": "Desk or door, two colours",
+      "price": "₹399+",
+      "belowMinimum": true
+    },
+    {
+      "name": "Lithophane lamp",
+      "desc": "Your photograph printed as light and shadow",
+      "price": "₹599+",
+      "belowMinimum": false
+    },
+    {
+      "name": "Custom PLA print",
+      "desc": "Your design or STL file, priced by weight",
+      "price": "₹4/g",
+      "belowMinimum": false
+    },
+    {
+      "name": "Custom PETG print",
+      "desc": "Tougher functional parts, priced by weight",
+      "price": "₹5/g",
+      "belowMinimum": false
+    },
+    {
+      "name": "Design help",
+      "desc": "Modelling from a sketch or reference",
+      "price": "Quoted",
+      "belowMinimum": false
+    }
+  ],
+
+  "quoteFactors": [
+    { "term": "Size and quantity", "def": "Bigger and more pieces mean more material and machine time." },
+    { "term": "Material", "def": "PLA for colour and detail, PETG where the part must take more stress." },
+    { "term": "Design work", "def": "Printing your STL costs less than modelling a piece from a sketch." },
+    { "term": "Finish", "def": "Hand-finishing, supports removal and multi-part assembly add time." },
+    { "term": "Delivery", "def": "Local handover in Bhubaneswar, or India-wide shipping charged at cost." }
+  ],
+
+  "projects": [
+    {
+      "slug": "phone-stand",
+      "title": "Honeycomb phone stand",
+      "category": "Functional",
+      "caption": "Two-colour PLA · folding tray",
+      "alt": "Orange and white honeycomb phone stand printed by DDPrinterZ, with a folding base tray, standing on a desk",
+      "enquiry": "a phone stand like the honeycomb one"
+    },
+    {
+      "slug": "name-keychains",
+      "title": "Script name keyrings",
+      "category": "Personalised",
+      "caption": "Two-colour lettering · pair",
+      "alt": "A pair of keyrings reading DinuDante in green script on a white outline, lying on a textured print bed",
+      "enquiry": "script name keyrings"
+    },
+    {
+      "slug": "blossom-jewellery-box",
+      "title": "Bow-trimmed keepsake box",
+      "category": "Décor",
+      "caption": "Lidded box · rose handle",
+      "alt": "Bright green printed keepsake box with a ring of bow details around the side and a rose-shaped lid handle",
+      "enquiry": "a keepsake box like the bow-trimmed one"
+    },
+    {
+      "slug": "dance-figurine",
+      "title": "Classical dance figurine",
+      "category": "Models",
+      "caption": "Fine detail · single colour",
+      "alt": "White printed figurine of a classical Indian dancer with raised arms, showing detailed jewellery and drapery",
+      "enquiry": "a detailed figurine like the classical dancer"
+    },
+    {
+      "slug": "sakura-bookmark",
+      "title": "Blossom bookmark",
+      "category": "Personalised",
+      "caption": "Three colours · held in hand for scale",
+      "alt": "Slim white printed bookmark with a red and black cherry blossom branch in relief, held in a hand",
+      "enquiry": "a blossom bookmark"
+    },
+    {
+      "slug": "dragon-figure",
+      "title": "Winged dragon figure",
+      "category": "Models",
+      "caption": "Multicolour · green eyes, red tail fin",
+      "alt": "Black printed dragon figure with spread wings, bright green eyes and a red fin along its tail, sitting on a desk",
+      "enquiry": "a character figure like the winged dragon"
+    },
+    {
+      "slug": "car-model",
+      "title": "Car model underside",
+      "category": "Models",
+      "caption": "Green PLA · printed chassis detail",
+      "alt": "Underside of a green printed car model showing the chassis, suspension arms, exhaust and wheels as printed detail",
+      "enquiry": "a detailed car model"
+    },
+    {
+      "slug": "anime-logo-panel",
+      "title": "Layered logo wall panel",
+      "category": "Décor",
+      "caption": "Three colours · stacked relief layers",
+      "alt": "Round layered wall panel printed in red, cream and black with raised Japanese lettering across the front",
+      "enquiry": "a layered wall panel"
+    },
+    {
+      "slug": "anime-figure-panel",
+      "title": "Layered figure wall panel",
+      "category": "Décor",
+      "caption": "Four colours · framed relief",
+      "alt": "Rectangular layered wall panel printed in white, red, grey and black showing a standing figure in a patterned coat",
+      "enquiry": "a layered figure wall panel"
+    }
+  ],
+
+  "videos": [
+    {
+      "id": "GrVqXOJHH-E",
+      "title": "Stackable blossom jewellery box",
+      "tag": "Project",
+      "poster": "assets/video/video-blossom-box",
+      "alt": "Video poster: the bright green bow-trimmed keepsake box on the printer bed"
+    },
+    {
+      "id": "qJx8QoXDi78",
+      "title": "From filament to finished product",
+      "tag": "Process",
+      "poster": "assets/video/video-process",
+      "alt": "Video poster: a finished dark printed tag with a white chevron on a pale blue print sheet"
+    },
+    {
+      "id": "GqWD6Tv1fzw",
+      "title": "A personalised birthday gift for Mom",
+      "tag": "Project",
+      "poster": "assets/video/video-mom-topper",
+      "alt": "Video poster: a white printed Mom cake topper standing in a birthday cake"
+    }
+  ],
+
+  "steps": [
+    {
+      "title": "Share your idea",
+      "body": "Send a photo, a rough sketch or an STL file. Tell me roughly how big it should be, how many you need, the colours you like and when you need it."
+    },
+    {
+      "title": "Approve the quote",
+      "body": "I confirm the material, colours, price and production timeline before anything is printed. A small advance starts the print."
+    },
+    {
+      "title": "Print, finish, hand over",
+      "body": "Every piece is checked and hand-finished. Collect it in Bhubaneswar, or I arrange shipping at cost once it is ready."
+    }
+  ],
+
+  "why": [
+    {
+      "title": "Two-colour printing",
+      "body": "Bambu Lab printers with AMS, so colour is printed into the object rather than painted on."
+    },
+    {
+      "title": "Made in Bhubaneswar",
+      "body": "Printed locally, with local handover instead of an intercity wait."
+    },
+    {
+      "title": "Maker-direct",
+      "body": "You talk to the person operating the printer, from first reference to final check."
+    },
+    {
+      "title": "Checked by hand",
+      "body": "Supports removed, edges cleaned and the piece inspected before it goes out."
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "How much does a custom 3D print cost?",
+      "a": "It depends on size, material and print time. Small items like name keyrings start at ₹149 and larger custom prints are priced by weight, from ₹4 per gram in PLA. A ₹400 minimum order value applies. You always get a clear quote before any work begins."
+    },
+    {
+      "q": "What should I send with my enquiry?",
+      "a": "A photo, a sketch or an STL file, plus the approximate size, the quantity, your preferred colours, whether the piece needs to be decorative or strong, and the date you need it by."
+    },
+    {
+      "q": "Do I need a 3D model already?",
+      "a": "No. An idea, a sketch or a reference photo is enough to start the conversation. If the piece needs modelling from scratch, that design time is included in your quote."
+    },
+    {
+      "q": "Which materials do you use?",
+      "a": "PLA for colourful, detailed gifts and indoor décor, and PETG for functional parts that need to take more stress. Prints are not certified for food contact, medical use or safety-critical loads."
+    },
+    {
+      "q": "Can you print more than one colour?",
+      "a": "Yes. The printers use an AMS unit, so multiple colours are printed into the object directly rather than painted afterwards."
+    },
+    {
+      "q": "How long does it take?",
+      "a": "Production for a typical order takes about 2 to 5 days, depending on the current queue and how complex the piece is. Your timeline is confirmed with your quote, and dispatch or delivery is arranged after production finishes."
+    },
+    {
+      "q": "Do you deliver in Bhubaneswar?",
+      "a": "Yes — local pickup and delivery within Bhubaneswar, and India-wide shipping charged at cost."
+    },
+    {
+      "q": "How is payment handled?",
+      "a": "Because every piece is made to order, a small advance is required to start the print, with the balance due on completion or delivery. The exact amount is confirmed in your quote."
+    }
+  ]
 }

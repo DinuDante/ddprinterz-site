@@ -1,0 +1,1262 @@
+[
+  {
+    "area": "responsive",
+    "check": "home-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-320-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-320-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 320px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-360-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-360-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 360px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-375-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-375-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 375px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-390-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-390-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 390px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-430-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-430-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 430px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-671-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-671-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 671px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-768-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-768-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 768px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-820-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-820-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 820px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-900-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-900-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 900px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1024-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1024-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1024px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1280-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1280-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1280px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1363-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1363-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1363px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1440-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1440-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1440px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1920-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-1920-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 1920px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-2560-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-2560-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 2560px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-landscape-844-night",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "home-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "services-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "work-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "privacy-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "policy-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "responsive",
+    "check": "404-landscape-844-day",
+    "status": "pass",
+    "detail": "no horizontal overflow at 844px"
+  },
+  {
+    "area": "gallery",
+    "check": "tile-heights-320",
+    "status": "pass",
+    "detail": "9 tiles, heights 437–458px"
+  },
+  {
+    "area": "gallery",
+    "check": "tile-heights-671",
+    "status": "pass",
+    "detail": "9 tiles, heights 463–484px"
+  },
+  {
+    "area": "gallery",
+    "check": "tile-heights-900",
+    "status": "pass",
+    "detail": "9 tiles, heights 440–440px"
+  },
+  {
+    "area": "gallery",
+    "check": "tile-heights-1363",
+    "status": "pass",
+    "detail": "9 tiles, heights 434–456px"
+  },
+  {
+    "area": "gallery",
+    "check": "tile-heights-1920",
+    "status": "pass",
+    "detail": "9 tiles, heights 434–456px"
+  },
+  {
+    "area": "gallery",
+    "check": "future-item-counts",
+    "status": "pass",
+    "detail": "14 tiles rendered, min height 456px"
+  },
+  {
+    "area": "contrast",
+    "check": "home-night",
+    "status": "pass",
+    "detail": "160 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "services-night",
+    "status": "pass",
+    "detail": "94 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "work-night",
+    "status": "pass",
+    "detail": "94 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "privacy-night",
+    "status": "pass",
+    "detail": "35 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "policy-night",
+    "status": "pass",
+    "detail": "41 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "404-night",
+    "status": "pass",
+    "detail": "24 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "home-day",
+    "status": "pass",
+    "detail": "160 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "services-day",
+    "status": "pass",
+    "detail": "94 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "work-day",
+    "status": "pass",
+    "detail": "94 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "privacy-day",
+    "status": "pass",
+    "detail": "35 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "policy-day",
+    "status": "pass",
+    "detail": "41 text nodes all meet WCAG AA"
+  },
+  {
+    "area": "contrast",
+    "check": "404-day",
+    "status": "pass",
+    "detail": "24 text nodes all meet WCAG AA"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "url": "/",
+    "lcp": 1236,
+    "cls": 0,
+    "fcp": 1236,
+    "domContentLoaded": 1287,
+    "load": 1288,
+    "requests": 7,
+    "transferKB": 217,
+    "byType": {
+      "image/png": "7KB",
+      "text/html": "46KB",
+      "image/webp": "134KB",
+      "text/css": "31KB"
+    }
+  },
+  {
+    "url": "/services.html",
+    "lcp": 2036,
+    "cls": 0,
+    "fcp": 1028,
+    "domContentLoaded": 985,
+    "load": 2027,
+    "requests": 7,
+    "transferKB": 366,
+    "byType": {
+      "text/html": "27KB",
+      "image/png": "5KB",
+      "image/webp": "303KB",
+      "text/css": "31KB"
+    }
+  },
+  {
+    "url": "/work.html",
+    "lcp": 1060,
+    "cls": 0,
+    "fcp": 1036,
+    "domContentLoaded": 1047,
+    "load": 1050,
+    "requests": 8,
+    "transferKB": 489,
+    "byType": {
+      "text/html": "41KB",
+      "image/png": "5KB",
+      "image/webp": "412KB",
+      "text/css": "31KB"
+    }
+  },
+  {
+    "url": "/order-policy.html",
+    "lcp": 824,
+    "cls": 0,
+    "fcp": 824,
+    "domContentLoaded": 815,
+    "load": 816,
+    "requests": 4,
+    "transferKB": 73,
+    "byType": {
+      "text/html": "20KB",
+      "image/png": "5KB",
+      "image/webp": "17KB",
+      "text/css": "31KB"
+    }
+  }
+]
