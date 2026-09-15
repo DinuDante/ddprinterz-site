@@ -88,7 +88,7 @@ trusting it.
 
 ---
 
-## Open decisions — owner only
+## Owner decisions resolved
 
 These are deliberately unresolved. Each one is a commercial or factual matter
 that cannot be settled from the repository, and none has been invented to close
